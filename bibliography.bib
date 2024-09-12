@@ -1,18 +1,465 @@
-
-@article{bungert2021bregman,
-      title={A Bregman Learning Framework for Sparse Neural Networks}, 
-      author={Leon Bungert and Tim Roith and Daniel Tenbrinck and Martin Burger},
-      year={2021},
-      eprint={2105.04319},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
+@dataset{dataset,
+	author = {Ankur Napa},
+	title = {Brewery Operations and Market Analysis},
+	year = {2023},
+	url = {
+	       https://www.kaggle.com/datasets/ankurnapa/brewery-operations-and-market-analysis-dataset/data
+	       },
+	urldate = {2024-07-12},
+	language = {english},
+}
+@online{jvalue:landing,
+	title = {The JValue Project},
+	titleaddon = {Open data, easy and social},
+	url = {https://jvalue.com/},
+	author = {{JValue Contributors}},
+	urldate = {2024-07-13},
+}
+@online{jvalue:jayvee,
+	title = {Jayvee},
+	url = {https://jvalue.com/jayvee},
+	author = {{JValue Contributors}},
+	urldate = {2024-07-13},
+}
+@online{jvalue:jayvee:docs:stdlib,
+	title = {Working with the standard library},
+	url = {https://jvalue.github.io/jayvee/docs/dev/guides/standard-library/
+	       },
+	author = {{JValue Contributors}},
+	urldate = {2024-08-03},
+}
+@online{jvalue:jayvee:docs:transform,
+	title = {Transforms},
+	url = {https://jvalue.github.io/jayvee/docs/user/transforms},
+	author = {{JValue Contributors}},
+	urldate = {2024-08-03},
+}
+@online{jvalue:jayvee:docs:core_concepts,
+	title = {Core Concepts},
+	url = {https://jvalue.github.io/jayvee/docs/user/core-concepts},
+	author = {{JValue Contributors}},
+	urldate = {2024-08-05},
+}
+@online{jvalue:jayvee:docs:runtime,
+	title = {Runtime Parameters},
+	url = {https://jvalue.github.io/jayvee/docs/user/runtime-parameters},
+	author = {{JValue Contributors}},
+	urldate = {2024-08-09},
 }
 
-@article{bungert2021neural,
-      title={Neural Architecture Search via Bregman Iterations}, 
-      author={Leon Bungert and Tim Roith and Daniel Tenbrinck and Martin Burger},
-      year={2021},
-      eprint={2106.02479},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
+@online{js:docs:structuredClone,
+	title = {The structured clone algorithm},
+	url = {
+	       https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm#things_that_dont_work_with_structured_clone
+	       },
+	author = {{MDN Contributors}},
+	urldate = {2024-08-04},
+	date = {2024-05-31},
 }
+
+@article{Ahmad2020,
+	author = {Tanveer Ahmad and Nauman Ahmed and Zaid Al-Ars and H. Peter
+	          Hofstee},
+	title = {Optimizing performance of GATK workflows using Apache Arrow
+	         In-Memory data framework},
+	journal = {BMC Genomics},
+	date = {2021-11-18},
+	volume = {21},
+	number = {10},
+	pages = {683},
+	abstract = {Immense improvements in sequencing technologies enable
+	            producing large amounts of high throughput and cost effective
+	            next-generation sequencing (NGS) data. This data needs to be
+	            processed efficiently for further downstream analyses.
+	            Computing systems need this large amounts of data closer to
+	            the processor (with low latency) for fast and efficient
+	            processing. However, existing workflows depend heavily on
+	            disk storage and access, to process this data incurs huge
+	            disk I/O overheads. Previously, due to the cost, volatility
+	            and other physical constraints of DRAM memory, it was not
+	            feasible to place large amounts of working data sets in
+	            memory. However, recent developments in storage-class memory
+	            and non-volatile memory technologies have enabled computing
+	            systems to place huge data in memory to process it directly
+	            from memory to avoid disk I/O bottlenecks. To exploit the
+	            benefits of such memory systems efficiently, proper formatted
+	            data placement in memory and its high throughput access is
+	            necessary by avoiding (de)-serialization and copy overheads
+	            in between processes. For this purpose, we use the newly
+	            developed Apache Arrow, a cross-language development
+	            framework that provides language-independent columnar
+	            in-memory data format for efficient in-memory big data
+	            analytics. This allows genomics applications developed in
+	            different programming languages to communicate in-memory
+	            without having to access disk storage and avoiding
+	            (de)-serialization and copy overheads.},
+	issn = {1471-2164},
+	doi = {10.1186/s12864-020-07013-y},
+	url = {https://doi.org/10.1186/s12864-020-07013-y},
+}
+@article{Peltenburg2021,
+	author = {Johan Peltenburg and Jeroen van Straten and Matthijs Brobbel
+	          and Zaid Al-Ars and H. Peter Hofstee},
+	title = {Generating High-Performance FPGA Accelerator Designs for Big
+	         Data Analytics with Fletcher and Apache Arrow},
+	journal = {Journal of Signal Processing Systems},
+	date = {2021-05-01},
+	volume = {93},
+	number = {5},
+	pages = {565-586},
+	abstract = {As big data analytics systems are squeezing out the last
+	            bits of performance of CPUs and GPUs, the next near-term and
+	            widely available alternative industry is considering for
+	            higher performance in the data center and cloud is the FPGA
+	            accelerator. We discuss several challenges a developer has to
+	            face when designing and integrating FPGA accelerators for big
+	            data analytics pipelines. On the software side, we observe
+	            complex run-time systems, hardware-unfriendly in-memory
+	            layouts of data sets, and (de)serialization overhead. On the
+	            hardware side, we observe a relative lack of
+	            platform-agnostic open-source tooling, a high design effort
+	            for data structure-specific interfaces, and a high design
+	            effort for infrastructure. The open source Fletcher framework
+	            addresses these challenges. It is built on top of Apache
+	            Arrow, which provides a common, hardware-friendly in-memory
+	            format to allow zero-copy communication of large tabular data
+	            , preventing (de)serialization overhead. Fletcher adds FPGA
+	            accelerators to the list of over eleven supported software
+	            languages. To deal with the hardware challenges, we present
+	            Arrow-specific components, providing easy-to-use,
+	            high-performance interfaces to accelerated kernels. The
+	            components are combined based on a generic architecture that
+	            is specialized according to the application through an
+	            extensive infrastructure generation framework that is
+	            presented in this article. All generated hardware is
+	            vendor-agnostic, and software drivers add a platform-agnostic
+	            layer, allowing users to create portable implementations.},
+	issn = {1939-8115},
+	doi = {10.1007/s11265-021-01650-6},
+	url = {https://doi.org/10.1007/s11265-021-01650-6},
+}
+
+@article{Dremio,
+	title = {It’s Time to Replace ODBC \& JDBC},
+	author = {Tomer Shiran},
+	date = {2019-07-03},
+	url = {https://www.dremio.com/blog/is-time-to-replace-odbc-jdbc},
+	urldate = {2024-07-13},
+}
+@inbook{Floratou2019,
+	author = "Floratou, Avrilia",
+	editor = "Sakr, Sherif and Zomaya, Albert Y.",
+	title = "Columnar Storage Formats",
+	bookTitle = "Encyclopedia of Big Data Technologies",
+	date = {2019},
+	publisher = "Springer International Publishing",
+	address = "Cham",
+	pages = "464--469",
+	isbn = "978-3-319-77525-8",
+	doi = "10.1007/978-3-319-77525-8_248",
+	url = "https://doi.org/10.1007/978-3-319-77525-8_248",
+}
+@online{arrow:status,
+	title = {Implementation Status},
+	url = {https://arrow.apache.org/docs/status.html},
+	author = {{The Apache Software Foundation}},
+	urldate = {2024-07-14},
+}
+@online{arrow:projects,
+	title = {Project and Product Names using "Apache Arrow"},
+	url = {https://arrow.apache.org/powered_by/},
+	author = {{The Apache Software Foundation}},
+	urldate = {2024-07-14},
+}
+@online{arrow:overview,
+	title = {Apache Arrow Overview},
+	url = {https://arrow.apache.org/overview/},
+	author = {{The Apache Software Foundation}},
+	urldate = {2024-07-30},
+}
+@online{arrow:langs,
+	title = {Install Apache Arrow},
+	url = {https://arrow.apache.org/install/},
+	author = {{The Apache Software Foundation}},
+	urldate = {2024-07-31},
+}
+@online{arrow:spec,
+	title = {Arrow Columnar Format},
+	url = {https://arrow.apache.org/docs/format/Columnar.html},
+	author = {{The Apache Software Foundation}},
+	urldate = {2024-07-31},
+}
+@online{arrow:spec:ipc,
+	title = {Serialization and Interprocess Communication (IPC)},
+	url = {
+	       https://arrow.apache.org/docs/format/Columnar.html#serialization-and-interprocess-communication-ipc
+	       },
+	author = {{The Apache Software Foundation}},
+	urldate = {2024-08-07},
+}
+@online{arrow:adbc,
+	title = {ADBC: Arrow Database Connectivity},
+	url = { https://arrow.apache.org/docs/format/ADBC.html },
+	author = {{The Apache Software Foundation}},
+	urldate = {2024-08-08},
+}
+@online{connector-arrow,
+	title = {Connector Arrow},
+	url = { https://crates.io/crates/connector_arrow },
+	author = {Aljaž Mur Eržen},
+	urldate = {2024-08-08},
+	date = {2024-06-20},
+}
+@inproceedings{Grossman2022,
+	author = "Max Grossman and Steve Poole and Howard Pritchard and Vivek
+	          Sarkar",
+	editor = "Stephen Poole and Oscar Hernandez and Matthew Baker and Tony
+	          Curtis",
+	title = "SHMEM-ML: Leveraging OpenSHMEM and Apache Arrow for Scalable,
+	         Composable Machine Learning",
+	booktitle = "OpenSHMEM and Related Technologies. OpenSHMEM in the Era of
+	             Exascale and Smart Networks",
+	date = {2022},
+	publisher = "Springer International Publishing",
+	address = "Cham",
+	pages = "111--125",
+	abstract = "SHMEM-ML is a domain specific library for distributed array
+	            computations and machine learning model training {\&}
+	            inference. Like other projects at the intersection of machine
+	            learning and HPC (e.g. dask, Arkouda, Legate Numpy), SHMEM-ML
+	            aims to leverage the performance of the HPC software stack to
+	            accelerate machine learning workflows. However, it differs in
+	            a number of ways.",
+	isbn = "978-3-031-04888-3",
+	doi = {10.1007/978-3-031-04888-3_7},
+	url = {https://doi.org/10.1007/978-3-031-04888-3_7},
+}
+@inproceedings{Furche2016,
+	title = "Data Wrangling for Big Data: Challenges and Opportunities",
+	abstract = "Data wrangling is the process by which the data required by
+	            an applicationis identified, extracted, cleaned and
+	            integrated, to yield adata set that is suitable for
+	            exploration and analysis. Although thereare widely used
+	            Extract, Transform and Load (ETL) techniques andplatforms,
+	            they often require manual work from technical and
+	            domainexperts at different stages of the process. When
+	            confrontedwith the 4 V{\textquoteright}s of big data (volume,
+	            velocity, variety and veracity),manual intervention may make
+	            ETL prohibitively expensive. Thispaper argues that providing
+	            cost-effective, highly-automated approachesto data wrangling
+	            involves significant research challenges,requiring
+	            fundamental changes to established areas such as data
+	            extraction,integration and cleaning, and to the ways in which
+	            theseareas are brought together. Specifically, the paper
+	            discusses the importanceof comprehensive support for context
+	            awareness withindata wrangling, and the need for adaptive,
+	            pay-as-you-go solutionsthat automatically tune the wrangling
+	            process to the requirementsand resources of the specific
+	            application.",
+	author = "Tim Furche and George Gottlob and Leonid Libkin and Giorgio
+	          Orsi and Norman Paton",
+	date = {2016-11-01},
+	doi = "10.5441/002/edbt.2016.44",
+	language = "English",
+	isbn = "2367-2005",
+	pages = "473--478",
+	booktitle = "Advances in Database Technology — EDBT 2016",
+}
+@inbook{Herrmann2022,
+	author = "Andrea Herrmann",
+	title = "Ermitteln von Anforderungen",
+	bookTitle = "Grundlagen der Anforderungsanalyse: Standardkonformes
+	             Requirements Engineering",
+	year = "2022",
+	publisher = "Springer Fachmedien Wiesbaden",
+	address = "Wiesbaden",
+	pages = "25--80",
+	abstract = "Das Ziel der Ermittlung von Anforderungen besteht darin, die
+	            Anforderungen zu kennen. Dazu muss man sie erfragen, finden,
+	            erfinden, rekonstruieren. Da die Anforderungen die Grundlage
+	            f{\"u}r Kostensch{\"a}tzung und Zeitplanung, f{\"u}r
+	            Entwicklung und f{\"u}r Testen darstellen, sollten sie von
+	            Anfang an m{\"o}glichst vollst{\"a}ndig und richtig sein,
+	            also die tats{\"a}chlichen Bed{\"u}rfnisse verst{\"a}ndlich
+	            wiedergeben. W{\"a}hrend der Ermittlung werden die
+	            Anforderungen darum oft bereits aufgeschrieben oder
+	            gezeichnet und konsolidiert.",
+	isbn = "978-3-658-35460-2",
+	doi = "10.1007/978-3-658-35460-2_4",
+	url = "https://doi.org/10.1007/978-3-658-35460-2_4",
+}
+@online{opendefinition:licenses,
+	url = {http://opendefinition.org/licenses/},
+	urldate = {2024-07-19},
+	author = {{Open Knowledge Foundation}},
+	title = {Conformant Licenses},
+}
+@online{opendefinition,
+	title = {Open Definition 2.1},
+	url = {https://opendefinition.org/od/2.1/en/},
+	urldate = {2024-08-09},
+	author = {{Open Knowledge Foundation}},
+}
+
+@article{Abadi2013,
+	url = {http://dx.doi.org/10.1561/1900000024},
+	year = {2013},
+	volume = {5},
+	journal = {Foundations and Trends® in Databases},
+	title = {The Design and Implementation of Modern Column-Oriented
+	         Database Systems},
+	doi = {10.1561/1900000024},
+	issn = {1931-7883},
+	number = {3},
+	pages = {197-280},
+	author = {Daniel Abadi and Peter Boncz and Stavros Harizopoulos and
+	          Stratos Idreos and Samuel Madden},
+}
+@phdthesis{Boncz2002,
+	title = {Monet: a next-generation database kernel for query-intensive
+	         applications},
+	author = {Peter Boncz},
+	date = {2002-05},
+}
+@online{polars,
+	title = {Polars},
+	titleaddon = {DataFrames for the new era},
+	url = {https://pola.rs/},
+	author = {{Polars Contributors}},
+	urldate = {2024-07-31},
+}
+@online{polars:docs:expr,
+	title = {Expressions},
+	url = {https://docs.pola.rs/user-guide/concepts/expressions/},
+	author = {{Polars Contributors}},
+	urldate = {2024-08-03},
+}
+@online{polars:docs:expr:col,
+	title = {Column selections},
+	url = {https://docs.pola.rs/user-guide/expressions/column-selections/},
+	author = {{Polars Contributors}},
+	urldate = {2024-08-06},
+}
+@online{polars:docs:expr:parsing,
+	title = {Casting},
+	url = {https://docs.pola.rs/user-guide/expressions/casting/},
+	author = {{Polars Contributors}},
+	urldate = {2024-08-07},
+}
+@online{polars:src:napi,
+	title = {nodejs-polars/Cargo.toml},
+	url = {
+	       https://github.com/pola-rs/nodejs-polars/blob/main/Cargo.toml#L18-L21
+	       },
+	author = {{Polars Contributors}},
+	urldate = {2024-08-17},
+}
+@online{napi,
+	title = {NAPI-RS},
+	url = {https://napi.rs/},
+	author = {{NAPI-RS Contributors}},
+	urldate = {2024-08-08},
+}
+@online{napi:template,
+	title = {napi-rs/package-template},
+	url = {https://github.com/napi-rs/package-template},
+	author = {{NAPI-RS Contributors}},
+	urldate = {2024-08-08},
+}
+@inbook{Dooley2024,
+	author = "John F. Dooley and Vera A. Kazakova",
+	title = "Design Patterns",
+	bookTitle = "Software Development, Design, and Coding: With Patterns,
+	             Debugging, Unit Testing, and Refactoring",
+	date = {2024},
+	publisher = "Apress",
+	address = "Berkeley, CA",
+	pages = "275--311",
+	abstract = "Do you reinvent the wheel each time you write code? Do you
+	            have to relearn how to iterate through an array every time
+	            you write a program? Do you have to reinvent how to fix a
+	            dangling else in every if statement you write? Do you need to
+	            relearn insertion sort or binary search every time you want
+	            to use them? Of course not!",
+	isbn = "979-8-8688-0285-0",
+	doi = "10.1007/979-8-8688-0285-0_13",
+	url = "https://doi.org/10.1007/979-8-8688-0285-0_13",
+}
+@online{so:benchmark,
+	title = {How to benchmark programs in Rust?},
+	url = {https://stackoverflow.com/a/40953863},
+	author = {Campbell Barton},
+	urldate = {2024-08-09},
+	date = {2022-01-04},
+}
+@manual{sqldiff,
+	title = {sqldiff.exe},
+	titleaddon = {Database Difference Utility},
+	url = {https://sqlite.org/sqldiff.html},
+	author = {{SQLite Contributors}},
+	urldate = {2024-08-09},
+}
+@manual{head,
+	title = {HEAD(1)},
+	titleaddon = {User Commands},
+	url = {https://man.archlinux.org/man/head.1},
+	author = {David MacKenzie and Jim Meyering},
+	date = {2024-03},
+	urldate = {2024-08-09},
+}
+@manual{js:in,
+	title = {Expressions and Operators},
+	url = {
+	       https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_operators#in
+	       },
+	author = {{MDN Contributors}},
+	date = {2024-07-30},
+	urldate = {2024-08-14},
+}
+@article{Gordon2012,
+	author = {Colin S. Gordon and Mathew J. Parkinson and Jared Parsons and
+	          Aleks Bromfield and Joe Duffy},
+	title = {Uniqueness and reference immutability for safe parallelism},
+	date = {2021-10},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	volume = {47},
+	number = {10},
+	issn = {0362-1340},
+	url = {https://doi.org/10.1145/2398857.2384619},
+	doi = {10.1145/2398857.2384619},
+	abstract = {A key challenge for concurrent programming is that
+	            side-effects (memory operations) in one thread can affect the
+	            behavior of another thread. In this paper, we present a type
+	            system to restrict the updates to memory to prevent these
+	            unintended side-effects. We provide a novel combination of
+	            immutable and unique (isolated) types that ensures safe
+	            parallelism (race freedom and deterministic execution). The
+	            type system includes support for polymorphism over type
+	            qualifiers, and can easily create cycles of immutable
+	            objects. Key to the system's flexibility is the ability to
+	            recover immutable or externally unique references after
+	            violating uniqueness without any explicit alias tracking. Our
+	            type system models a prototype extension to C\# that is in
+	            active use by a Microsoft team. We describe their experiences
+	            building large systems with this extension. We prove the
+	            soundness of the type system by an embedding into a program
+	            logic.},
+	journal = {SIGPLAN Not.},
+	pages = {21–40},
+	numpages = {20},
+	keywords = {views, type systems, reference immutability, concurrency},
+}
+@techreport{eu:opendata,
+	author = {{Publications Office of the European Union} and Martin Page
+	          and Emir Hajduk and Lincklaen Arriëns, Eline and Gianfranco
+	          Cecconi and Suzan Brinkhuis},
+	title = {Open data maturity report 2023},
+	institution = {Publications Office of the European Union},
+	publisher = {Publications Office of the European Union},
+	date = {2023},
+	doi = {doi/10.2830/384422},
+	url = {https://data.europa.eu/doi/10.2830/384422},
+	urldate = {2024-08-15},
+}
+

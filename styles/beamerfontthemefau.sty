@@ -32,10 +32,19 @@
 % ..............................................................................
 
 % Helvetica
-\RequirePackage{lmodern}
+% \RequirePackage{lmodern}
+\RequirePackage[regular]{newcomputermodern}
 \RequirePackage{textcomp}
 \RequirePackage{fix-cm}
-\RequirePackage[scaled=0.92]{helvet}
+% \RequirePackage[scaled=0.92]{helvet}
+\setsansfont{texgyreheros}[
+	Scale=MatchLowercase,% or MatchUppercase
+	Extension=.otf,
+	UprightFont=*-regular,
+	ItalicFont=*-italic,
+	BoldFont=*-bold,
+	BoldItalicFont=*-bolditalic,
+]
 
 % ..............................................................................
 % scalable vector fonts
@@ -62,7 +71,7 @@
 \FPupn{\resulttinyY}{baselinescale fontSizeY * 2 round}
 \renewcommand*{\tiny}{\fontsize{\resulttinyX}{\resulttinyY}\selectfont}
 
-\edef\fontSizeX{14.4}\edef\fontSizeY{18}   
+\edef\fontSizeX{14.4}\edef\fontSizeY{18}
 \FPupn{\resultscriptsizeX}{fontscale fontSizeX * 2 round}
 \FPupn{\resultscriptsizeY}{fontscale fontSizeY * 2 round}
 \renewcommand*{\scriptsize}{\fontsize{\resultscriptsizeX}{\resultscriptsizeY}\selectfont}
