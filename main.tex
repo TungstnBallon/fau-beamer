@@ -24,8 +24,9 @@
 		   ]{styles/beamerthemefau}
 % ----------------------------------------------------------------------------------------
 % Input and output encoding
-% \usepackage[T1]{fontenc}
-% \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+% \usepackage{fontspec}
 % ----------------------------------------------------------------------------------------
 % Language settings
 \usepackage[english]{babel}
@@ -78,7 +79,8 @@ Jonas Zeltner\inst{1}\and%
 % Bibliography
 % ------------------------------------------------
 \usepackage{csquotes}
-\usepackage[style=apa, %alternatively: numeric, numeric-comp, and other from biblatex
+\usepackage[
+style=apa, %alternatively: numeric, numeric-comp, and other from biblatex
 			defernumbers=true,
 			useprefix=true,%
 			giveninits=true,%
@@ -124,6 +126,8 @@ Jonas Zeltner\inst{1}\and%
 % ================================================
 % Additional packages
 % ------------------------------------------------
+\usepackage{subcaption}
+
 
 
 % ================================================
@@ -154,4 +158,11 @@ Jonas Zeltner\inst{1}\and%
 \end{frame}
 
 \input{sections/presentation.tex}
+
+\begin{frame}{References}
+	% \begin{block}{References}
+	\printbibliography[heading=none]
+	% \end{block}
+\end{frame}
+
 \end{document}
