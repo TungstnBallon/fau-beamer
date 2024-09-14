@@ -277,6 +277,9 @@ TSWLatexianTemp*
 # Makeindex log files
 *.lpz
 
+# SVG intermediates
+svg-inkscape/
+
 # vscode
 /.vscode
 

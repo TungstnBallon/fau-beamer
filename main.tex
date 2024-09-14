@@ -78,24 +78,11 @@ Jonas Zeltner\inst{1}\and%
 % ================================================
 % Bibliography
 % ------------------------------------------------
+\usepackage{fvextra}
 \usepackage{csquotes}
-\usepackage[
-style=apa, %alternatively: numeric, numeric-comp, and other from biblatex
-			defernumbers=true,
-			useprefix=true,%
-			giveninits=true,%
-			hyperref=true,%
-			autocite=inline,%
-			maxcitenames=5,%
-			maxbibnames=20,%
-			uniquename=init,%
-			sortcites=true,% sort citations when multiple entries are passed to one cite command
-			doi=true,%
-			isbn=false,%
-			url=false,%
-			eprint=false,%
-			backend=biber%
-		   ]{biblatex}
+\usepackage{perpage}
+\MakePerPage{footnote}
+\usepackage[style=apa,backend=biber]{biblatex}
 \addbibresource{bibliography.bib}
 \setbeamertemplate{bibliography item}[text]
 
@@ -127,6 +114,8 @@ style=apa, %alternatively: numeric, numeric-comp, and other from biblatex
 % Additional packages
 % ------------------------------------------------
 \usepackage{subcaption}
+\usepackage{svg}
+\usepackage{tikz}
 
 
 
@@ -142,13 +131,17 @@ style=apa, %alternatively: numeric, numeric-comp, and other from biblatex
 % Change color for cite locally
 \newcommand{\colorcite}[3]{{\hypersetup{citecolor=#1}{\cite[#2]{#3}}}}
 % ------------------------------------------------
+
+
+
+
 % ================================================
 % The main document
 % ------------------------------------------------
 \begin{document}
 % Title page
 \begin{frame}[t,titleimage]{-}
-	\titlepage%
+	\titlepage
 \end{frame}
 
 \input{sections/intro}

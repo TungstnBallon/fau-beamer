@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	contentStyleType="text/css" height="46px" preserveAspectRatio="none"
+	style="width:366px;height:46px;background:#FFFFFF;" version="1.1" viewBox="0 0 366 46"
+	width="366px" zoomAndPan="magnify">
+	<defs />
+	<g>
+		<ellipse cx="16" cy="24" fill="#222222" rx="10" ry="10"
+			style="stroke:#222222;stroke-width:1.0;" />
+		<rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="75.2539" x="46.5" y="7" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="55.2539" x="56.5" y="28.1387">Extractor</text>
+		<rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="93.9805" x="142" y="7" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="73.9805" x="152" y="28.1387">Transformer</text>
+		<rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="61.3145" x="256.5" y="7" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="41.3145" x="266.5" y="28.1387">Loader</text>
+		<ellipse cx="349" cy="24" fill="none" rx="11" ry="11"
+			style="stroke:#222222;stroke-width:1.0;" />
+		<ellipse cx="349" cy="24" fill="#222222" rx="6" ry="6"
+			style="stroke:#222222;stroke-width:1.0;" /><!--link
+		start to Extractor-->
+		<g id="link_start_Extractor">
+			<path d="M26.09,24 C32.88,24 33.67,24 40.45,24 " fill="none"
+				id="start-to-Extractor" style="stroke:#181818;stroke-width:1.0;" />
+			<polygon fill="#181818"
+				points="46.45,24,37.45,20,41.45,24,37.45,28,46.45,24"
+				style="stroke:#181818;stroke-width:1.0;" />
+		</g><!--link
+		Extractor to Transformer-->
+		<g id="link_Extractor_Transformer">
+			<path d="M121.73,24 C128.48,24 129.22,24 135.97,24 " fill="none"
+				id="Extractor-to-Transformer"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<polygon fill="#181818"
+				points="141.97,24,132.97,20,136.97,24,132.97,28,141.97,24"
+				style="stroke:#181818;stroke-width:1.0;" />
+		</g><!--link
+		Transformer to Loader-->
+		<g id="link_Transformer_Loader">
+			<path d="M236.09,24 C242.85,24 243.61,24 250.37,24 " fill="none"
+				id="Transformer-to-Loader" style="stroke:#181818;stroke-width:1.0;" />
+			<polygon fill="#181818"
+				points="256.37,24,247.37,20,251.37,24,247.37,28,256.37,24"
+				style="stroke:#181818;stroke-width:1.0;" />
+		</g><!--link
+		Loader to end-->
+		<g id="link_Loader_end">
+			<path d="M317.52,24 C324.24,24 324.96,24 331.69,24 " fill="none"
+				id="Loader-to-end" style="stroke:#181818;stroke-width:1.0;" />
+			<polygon fill="#181818"
+				points="337.69,24,328.69,20,332.69,24,328.69,28,337.69,24"
+				style="stroke:#181818;stroke-width:1.0;" />
+		</g><!--SRC=[qz3ILD2rKr1ohIWfIamkoIzIuk840f1GI55YNd5QVb5kAfAWJtvY2X9VGqiJ0000]-->
+	</g>
+</svg>
