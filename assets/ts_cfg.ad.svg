@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	contentStyleType="text/css" height="298px" preserveAspectRatio="none"
+	style="width:158px;height:298px;background:#FFFFFF;" version="1.1" viewBox="0 0 158 298"
+	width="158px" zoomAndPan="magnify">
+	<defs />
+	<g>
+		<ellipse cx="79.3184" cy="20" fill="#222222" rx="10" ry="10"
+			style="stroke:#222222;stroke-width:1.0;" />
+		<rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="131.5625" x="13.5371" y="50" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="111.5625" x="23.5371" y="71.1387">:LocalFileExtractor</text>
+		<rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="136.6367" x="11"
+			y="103.9688" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="116.6367" x="21" y="125.1074">:TextFileInterpreter</text>
+		<rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="113.3691" x="22.6338"
+			y="157.9375" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="93.3691" x="32.6338" y="179.0762">:CSVInterpreter</text>
+		<rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="122.1816" x="18.2275"
+			y="211.9063" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="102.1816" x="28.2275" y="233.0449">:TableInterpreter</text>
+		<ellipse cx="79.3184" cy="276.875" fill="none" rx="11" ry="11"
+			style="stroke:#222222;stroke-width:1.0;" />
+		<ellipse cx="79.3184" cy="276.875" fill="#222222" rx="6" ry="6"
+			style="stroke:#222222;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="79.3184" x2="79.3184" y1="30"
+			y2="50" />
+		<polygon fill="#181818" points="75.3184,40,79.3184,50,83.3184,40,79.3184,44"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="79.3184" x2="79.3184"
+			y1="83.9688" y2="103.9688" />
+		<polygon fill="#181818"
+			points="75.3184,93.9688,79.3184,103.9688,83.3184,93.9688,79.3184,97.9688"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="79.3184" x2="79.3184"
+			y1="137.9375" y2="157.9375" />
+		<polygon fill="#181818"
+			points="75.3184,147.9375,79.3184,157.9375,83.3184,147.9375,79.3184,151.9375"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="79.3184" x2="79.3184"
+			y1="191.9063" y2="211.9063" />
+		<polygon fill="#181818"
+			points="75.3184,201.9063,79.3184,211.9063,83.3184,201.9063,79.3184,205.9063"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="79.3184" x2="79.3184"
+			y1="245.875" y2="265.875" />
+		<polygon fill="#181818"
+			points="75.3184,255.875,79.3184,265.875,83.3184,255.875,79.3184,259.875"
+			style="stroke:#181818;stroke-width:1.0;" /><!--SRC=[Aov9B2hXukJajBBooKzEp77Bp4brhIWfIamkoI-oXaY4f5QKWCGzyqfIYmgAKe4aLCOvE0nJC2Gn2LDjSKb-0G00]-->
+	</g>
+</svg>

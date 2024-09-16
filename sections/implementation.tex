@@ -66,16 +66,44 @@
 
 \end{frame}
 \begin{frame}[t]{Implementation}{Converting \emph{Jayvee} expressions to \emph{Polars}}
-	\only<1>{
-		There are three categories of \emph{Jayvee} expressions\footnotemark:
-		\begin{description}
-			\item[Literal] Wrap the literal in \Verb|pl.lit(...)|
-			\item[Variable] Look up the value in the evaluation context
-			\item[Operator] Use the interface method \Verb|PolarsOperator.polarsEvaluate(...)|
-		\end{description}
-		\footnotetext{\textcite{jvalue:jayvee:docs:expressions}}
-	}
-	\only<2>{
+	\begin{itemize}
+		\item There are three categories of \emph{Jayvee} expressions\footnotemark[1]:
+		      \begin{description}
+			      \item[Literal] Wrap the literal in \Verb|pl.lit(...)|
+			      \item[Variable] Look up the value in the evaluation context
+			      \item[Operator] Use the interface method \Verb|PolarsOperator.polarsEvaluate(...)|
+		      \end{description}
+		\item<2-> \emph{Jayvee} expressions without equivalent \emph{Polars} expressions
+		      \begin{description}
+			      \item[xor] logically equivalent term built with \Verb|and(...)|, \Verb|or(...)| and \Verb|not()|
+			      \item[sqrt] \Verb|pow(1/2)|
+			      \item[round] \Verb|round(0)|
+			      \item<3->[root, pow, replace, matches] The \emph{Polars} expressions for these operators expect single values and do not support columns as parameters.
+			      \item<3->[asBoolean] \emph{Polars} supports converting between strings and numeric types with the expression \Verb|cast(...)|.
+			            This approach is not supported for booleans\footnotemark[2].
+		      \end{description}
+	\end{itemize}
+
+	\footnotetext[1]{\textcite{jvalue:jayvee:docs:expressions}}
+	\footnotetext[2]{\textcite{polars:docs:expr:parsing}}
+\end{frame}
+\begin{frame}[fragile]{Implementation}{Example table transform}
+	\begin{onlyenv}<1>
+		\begin{minted}{typescript}
+		transform tr {
+			from x oftype integer;
+			from y oftype integer;
+			to z oftype decimal;
+			z: x + y;
+		}
+		block B oftype TableTransformer {
+			inputColumns: ['a', 'b'];
+			outputColumn: 'c';
+			uses: tr;
+		}
+		\end{minted}
+	\end{onlyenv}
+	\only<2> {
 		\begin{figure}
 			\includesvg[height=\FrameHeight]{assets/eval_expr.sd.svg}
 		\end{figure}

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	contentStyleType="text/css" height="352px" preserveAspectRatio="none"
+	style="width:135px;height:352px;background:#FFFFFF;" version="1.1" viewBox="0 0 135 352"
+	width="135px" zoomAndPan="magnify">
+	<defs />
+	<g>
+		<ellipse cx="67.916" cy="20" fill="#222222" rx="10" ry="10"
+			style="stroke:#222222;stroke-width:1.0;" />
+		<rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="113.832" x="11" y="50" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="93.832" x="21" y="71.1387">AddColumnOne</text>
+		<rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="79.584" x="28.124"
+			y="103.9688" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="59.584" x="38.124" y="125.1074">BitPlusVol</text>
+		<rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="111.6055" x="12.1133"
+			y="157.9375" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="91.6055" x="22.1133" y="179.0762">UpdatePHLevel</text>
+		<rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="70.7832" x="32.5244"
+			y="211.9063" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="50.7832" x="42.5244" y="233.0449">SoldSqrt</text>
+		<rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="98.832" x="18.5" y="265.875" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="78.832" x="28.5" y="287.0137">LiquorLoader</text>
+		<ellipse cx="67.916" cy="330.8438" fill="none" rx="11" ry="11"
+			style="stroke:#222222;stroke-width:1.0;" />
+		<ellipse cx="67.916" cy="330.8438" fill="#222222" rx="6" ry="6"
+			style="stroke:#222222;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="67.916" x2="67.916" y1="30"
+			y2="50" />
+		<polygon fill="#181818" points="63.916,40,67.916,50,71.916,40,67.916,44"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="67.916" x2="67.916" y1="83.9688"
+			y2="103.9688" />
+		<polygon fill="#181818"
+			points="63.916,93.9688,67.916,103.9688,71.916,93.9688,67.916,97.9688"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="67.916" x2="67.916" y1="137.9375"
+			y2="157.9375" />
+		<polygon fill="#181818"
+			points="63.916,147.9375,67.916,157.9375,71.916,147.9375,67.916,151.9375"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="67.916" x2="67.916" y1="191.9063"
+			y2="211.9063" />
+		<polygon fill="#181818"
+			points="63.916,201.9063,67.916,211.9063,71.916,201.9063,67.916,205.9063"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="67.916" x2="67.916" y1="245.875"
+			y2="265.875" />
+		<polygon fill="#181818"
+			points="63.916,255.875,67.916,265.875,71.916,255.875,67.916,259.875"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="67.916" x2="67.916" y1="299.8438"
+			y2="319.8438" />
+		<polygon fill="#181818"
+			points="63.916,309.8438,67.916,319.8438,71.916,309.8438,67.916,313.8438"
+			style="stroke:#181818;stroke-width:1.0;" /><!--SRC=[HSYn2e0W403GkJwffcff41AaTk5k42vFpxFl3mBjZQ-e5ns7pxG0R4prZaV4kUKQr58j5rElCu5NjBl11_zrJE2oQ0yJScKnx06bPL5EBm00]-->
+	</g>
+</svg>
