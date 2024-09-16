@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	contentStyleType="text/css" height="443px" preserveAspectRatio="none"
+	style="width:352px;height:443px;background:#FFFFFF;" version="1.1" viewBox="0 0 352 443"
+	width="352px" zoomAndPan="magnify">
+	<defs />
+	<g>
+		<ellipse cx="187.8359" cy="20" fill="#222222" rx="10" ry="10"
+			style="stroke:#222222;stroke-width:1.0;" />
+		<rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="116.6797" x="129.4961"
+			y="50" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="96.6797" x="139.4961" y="71.1387">start interpreter</text>
+		<rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="94.7188" x="140.4766"
+			y="103.9688" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="74.7188" x="150.4766" y="125.1074">parse model</text>
+		<rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="132.2246" x="121.7236"
+			y="245.9375" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="112.2246" x="131.7236" y="267.0762">get block executor</text>
+		<rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="97.4844" x="139.0938"
+			y="299.9063" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="77.4844" x="149.0938" y="321.0449">call executor</text>
+		<rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="253.6719" x="61" y="353.875" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="233.6719" x="71" y="375.0137">save output as input for the next
+			block</text>
+		<polygon fill="#F1F1F1"
+			points="148.9197,201.9375,226.7522,201.9375,238.7522,213.9375,226.7522,225.9375,148.9197,225.9375,136.9197,213.9375,148.9197,201.9375"
+			style="stroke:#181818;stroke-width:0.5;" />
+		<text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing"
+			textLength="77.8325" x="148.9197" y="217.7456">for each block</text>
+		<polygon fill="#F1F1F1"
+			points="141.6929,157.9375,233.979,157.9375,245.979,169.9375,233.979,181.9375,141.6929,181.9375,129.6929,169.9375,141.6929,157.9375"
+			style="stroke:#181818;stroke-width:0.5;" />
+		<text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing"
+			textLength="92.2861" x="141.6929" y="173.7456">for each pipeline</text>
+		<ellipse cx="24" cy="212.9375" fill="none" rx="11" ry="11"
+			style="stroke:#222222;stroke-width:1.0;" />
+		<ellipse cx="24" cy="212.9375" fill="#222222" rx="6" ry="6"
+			style="stroke:#222222;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="187.8359" x2="187.8359" y1="30"
+			y2="50" />
+		<polygon fill="#181818" points="183.8359,40,187.8359,50,191.8359,40,187.8359,44"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="187.8359" x2="187.8359"
+			y1="83.9688" y2="103.9688" />
+		<polygon fill="#181818"
+			points="183.8359,93.9688,187.8359,103.9688,191.8359,93.9688,187.8359,97.9688"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="187.8359" x2="187.8359"
+			y1="279.9063" y2="299.9063" />
+		<polygon fill="#181818"
+			points="183.8359,289.9063,187.8359,299.9063,191.8359,289.9063,187.8359,293.9063"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="187.8359" x2="187.8359"
+			y1="333.875" y2="353.875" />
+		<polygon fill="#181818"
+			points="183.8359,343.875,187.8359,353.875,191.8359,343.875,187.8359,347.875"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="187.8359" x2="187.8359"
+			y1="225.9375" y2="245.9375" />
+		<polygon fill="#181818"
+			points="183.8359,235.9375,187.8359,245.9375,191.8359,235.9375,187.8359,239.9375"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="187.8359" x2="187.8359"
+			y1="387.8438" y2="397.8438" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="187.8359" x2="326.6719"
+			y1="397.8438" y2="397.8438" />
+		<polygon fill="#181818"
+			points="322.6719,314.8906,326.6719,304.8906,330.6719,314.8906,326.6719,310.8906"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="326.6719" x2="326.6719"
+			y1="213.9375" y2="397.8438" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="326.6719" x2="238.7522"
+			y1="213.9375" y2="213.9375" />
+		<polygon fill="#181818"
+			points="248.7522,209.9375,238.7522,213.9375,248.7522,217.9375,244.7522,213.9375"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="136.9197" x2="49" y1="213.9375"
+			y2="213.9375" />
+		<polygon fill="#181818" points="45,300.8906,49,310.8906,53,300.8906,49,304.8906"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="49" x2="49" y1="213.9375"
+			y2="409.8438" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="49" x2="338.6719" y1="409.8438"
+			y2="409.8438" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="338.6719" x2="338.6719"
+			y1="169.9375" y2="409.8438" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="338.6719" x2="245.979"
+			y1="169.9375" y2="169.9375" />
+		<polygon fill="#181818"
+			points="255.979,165.9375,245.979,169.9375,255.979,173.9375,251.979,169.9375"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="187.8359" x2="187.8359"
+			y1="181.9375" y2="201.9375" />
+		<polygon fill="#181818"
+			points="183.8359,191.9375,187.8359,201.9375,191.8359,191.9375,187.8359,195.9375"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="129.6929" x2="24" y1="169.9375"
+			y2="169.9375" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="24" x2="24" y1="169.9375"
+			y2="201.9375" />
+		<polygon fill="#181818" points="20,191.9375,24,201.9375,28,191.9375,24,195.9375"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="187.8359" x2="187.8359"
+			y1="137.9375" y2="157.9375" />
+		<polygon fill="#181818"
+			points="183.8359,147.9375,187.8359,157.9375,191.8359,147.9375,187.8359,151.9375"
+			style="stroke:#181818;stroke-width:1.0;" /><!--SRC=[NOv14W8X30JF-8hSr2_ilWPX54ea50cwptUXE759JKqcFH6rLI_6c4swefWLjLISSnzsiLL07_P8m_Y5c42t9rU2TO5AB4WnuzwNLzg4JyeZiNjBXp7XW6iQEHDNFwahPEG7ONjXdiz3ddyucz9YYVs2k6bfIhQtTT6P6a0PnmIDCB8VfQiMvV87]-->
+	</g>
+</svg>

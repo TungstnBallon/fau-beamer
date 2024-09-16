@@ -1,0 +1,267 @@
+\section{Architecture}
+\begin{frame}[t,fragile]{Architecture}{Interpreter overview}
+	\begin{itemize}
+		\item The \emph{Jayvee} interpreter is a program that can parse \emph{Jayvee} source files and execute the defined pipelines
+		      \pause
+		\item Interpreter steps:
+		      \begin{enumerate}
+			      \item Reading and parsing the source file (out of scope). \\
+			            This results in a list of pipeline definitions.
+			            \pause
+			      \item The following algorithm:
+			            \begin{minted}{python}
+	for pipeline in pipelineDefinitions:
+		prevOutput = null;
+		for block in pipeline.blockDefinitions:
+			executor = find_executor(block);
+			prevOutput = executor.execute(prevOutput);
+					\end{minted}
+		      \end{enumerate}
+	\end{itemize}
+\end{frame}
+\begin{frame}[t]{Architecture}{Interpreter overview (cont.)}
+	\begin{columns}[t]
+		\begin{column}{0.4\linewidth}
+			\begin{itemize}
+				\item<1-> All block executors implement \Verb|BlockExecutor|
+				\item<2-> All block executors extend \Verb|AbstractBlockExecutor|
+				\item<3-> All block inputs and outputs implement \Verb|IOTypeImplementation|
+				\item<4-> General Approach: Replace \Verb|Table| with an abstract class
+				\item<6-> Variant of the Strategy Pattern\footnotemark:
+				      \begin{itemize}[<6->]
+					      \item Abstract class instead of interface
+					      \item Allows to pick the implementation at runtime
+				      \end{itemize}
+			\end{itemize}
+		\end{column}
+		\hfill
+		\begin{column}{0.5\linewidth}
+			\begin{center}
+				\footnotesize
+				\only<-4> {
+					\includesvg[width=0.9\linewidth]{assets/interpreter_overview.cd.svg}
+				}
+				\only<5-> {
+					\includesvg[width=0.9\linewidth]{assets/general_idea.cd.svg}
+				}
+			\end{center}
+		\end{column}
+	\end{columns}
+	\footnotetext{\textcite{Dooley2024}}
+\end{frame}
+
+\begin{frame}[t]{Architecture}{Possible \emph{Arrow} implementations}
+	\begin{itemize}
+		\item<1-> Implementation from scratch:
+		      \begin{itemize}
+			      \item Full control over the implementation
+			      \item Likely to be less correct or performant than mature implementations
+		      \end{itemize}
+		\item<2-> \emph{TypeScript} library\footnotemark[1] for \emph{Arrow}:
+		      \begin{itemize}
+			      \item Lags behind in support for other Apache frameworks\footnotemark[2]
+			      \item This does not fulfill the \emph{interoperability} requirement
+		      \end{itemize}
+		\item<3-> \emph{Polars}\footnotemark[3]:
+		      \begin{itemize}
+			      \item Offers useful abstractions (\Verb|DataFrame|)
+			      \item Written in \emph{Rust}
+			      \item Has a \emph{TypeScript} API
+		      \end{itemize}
+	\end{itemize}
+
+	\footnotetext[1]{\textcite{arrow:overview}}
+	\footnotetext[2]{\textcite{arrow:status}}
+	\footnotetext[3]{\textcite{polars}}
+\end{frame}
+
+\begin{frame}[t]{Architecture}{The new table implementation}
+	\begin{columns}[T]
+		\begin{column}{0.5\linewidth}
+			\begin{itemize}
+				\item Old implementation moved to \Verb|TsTable|
+				\item Added the abstract class \Verb|TableColumn|
+				\item \Verb|PolarsTable| and \Verb|PolarsTableColumn| are adapters\footnotemark \text{ } for \Verb|DataFrame| and \Verb|Series|
+			\end{itemize}
+		\end{column}
+		\hfill
+		\begin{column}{0.5\linewidth}
+			\includesvg[width=\linewidth]{assets/table_overview.cd.svg}
+		\end{column}
+	\end{columns}
+	\footnotetext{\textcite{Dooley2024}}
+\end{frame}
+\begin{frame}[t]{Architecture}{Changes compared to the old table}
+	\begin{columns}[T]
+		\begin{column}{0.6\linewidth}
+			\begin{itemize}
+				\item Methods working on rows (like \Verb|addRow(...)|) were removed, because they don't take advantage of the columnar representation and may force the conversion to a row-oriented representation
+				\item Added the type guards \Verb|isPolars()| and \Verb|isTypecript()| to distinguish between the table implementations at runtime
+				\item Replaced \Verb|addColum(...)| with \Verb|withColumn(...)|, because operations with side effects make parallel execution difficult\footnotemark
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.4\linewidth}
+			\vfill
+			\small
+			\includesvg[width=\linewidth]{assets/table.cd.svg}
+			\vfill
+		\end{column}
+	\end{columns}
+	\footnotetext{\textcite{Gordon2012}}
+\end{frame}
+\begin{frame}[t]{Architecture}{PolarsTable}
+	\begin{columns}[T]
+		\begin{column}{0.6\linewidth}
+			\begin{itemize}
+				\item Extends the abstract methods from \Verb|Table|
+				\item The methods \Verb|writeIpc(...)| and \Verb|writeIpcTo(...)| convert the table to the \emph{Arrow} IPC format
+				\item \Verb|withColumn(...)| is overloaded with a second signature, that can handle \emph{Polars} expressions
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.4\linewidth}
+			\vfill
+			\small
+			\includesvg[width=\linewidth]{assets/polarsTable.cd.svg}
+			\vfill
+		\end{column}
+	\end{columns}
+\end{frame}
+\begin{frame}[t,fragile]{Architecture}{\emph{Polars} expressions}
+	\begin{block}{\emph{Polars expression}}
+		Describes a series of operations, that result in one or more columns, with automatic optimization and parallelization\footnotemark[1].
+		They can be chained.
+	\end{block}
+	\pause
+	\scriptsize
+	\begin{figure}
+		\begin{minted}[style=default]{typescript}
+use { pl } from 'nodejs-polars';
+// Creation of the DataFrame was omitted
+const dataFrame = ...;
+// When the expression is applied to a DataFrame, `pl.col(...)` selects a column, based on the name
+const first = pl.col("a")
+const second = pl.col("b")
+// When the expression is applied, `mul` multplies all values from expression `first` with those from `second`
+const product = first.mul(second)
+// When the expression is applied, `alias("c")` renames the column to "c".
+const renamed = product.alias("c");
+// withColumn applies the expression and returns a DataFrame, containing the column computed by the expression.
+const newDataFrame = dataFrame.withColumn(renamed)
+// `newDataFrame` contains a column "c". "c" contains the values of column "a" multplied with the values from column "b"
+	\end{minted}
+		\caption{How to multiply the columns "a" and "b"}
+	\end{figure}
+	\footnotetext[1]{\textcite{polars:docs:expr}}
+\end{frame}
+\begin{frame}[t]{Architecture}{What now?} % FIXME What now?
+	\begin{columns}[T]
+		\begin{column}{0.5\linewidth}
+			\begin{itemize}
+				\item<2-> The abstract \Verb|Table| is incompatible with the old \Verb|Table| (e.g. \Verb|addRow(...)|)
+				\item<3-> The block executors have to be adapted to the new table implementation:
+				      \begin{enumerate}[<4->]
+					      \item \Verb|TableInterpreterExecutor|
+					      \item \Verb|TableTransformerExecutor| (includes \Verb|TransformExecutor|)
+					      \item \Verb|SQLiteLoaderExecutor|
+				      \end{enumerate}
+				\item<5-> Add new executors to take advantage of \Verb|Polars|:
+				      \begin{enumerate}
+					      \item \Verb|FileToTableInterpreterExecutor|
+					      \item \Verb|LocalFileToTableExtractorExecutor|
+					      \item \Verb|RustSQLiteLoaderExecutor|
+				      \end{enumerate}
+				\item<6-> The correct executor is picked at runtime by the interpreter
+			\end{itemize}
+		\end{column}
+		\hfill
+		\begin{column}{0.5\linewidth}
+			\only<1-2> {
+				\includesvg[width=\linewidth]{assets/overview_after_tables.cd.svg}
+			}
+			\only<3->{
+				\includesvg[width=\linewidth]{assets/overview_with_new_execs.cd.svg}
+			}
+		\end{column}
+	\end{columns}
+\end{frame}
+\begin{frame}[t]{Architecture}{\Verb|FileToTableInterpreter| and \Verb|LocalFileToTableExtractor|}
+	\begin{columns}[T]
+		\begin{column}{0.5\linewidth}
+			\begin{itemize}
+				\item The standard way of loading a table does not take advantage of \Verb|Polars|' CSV parsing capabilities
+				\item<2-> \Verb|FileToTableInterpreter| combines:
+				      \begin{itemize}
+					      \item \Verb|TextFileInterpreter|
+					      \item \Verb|CSVFileInterpreter|
+					      \item \Verb|TableInterpreter|
+				      \end{itemize}
+				\item<3-> \Verb|LocalFileToTableExtractor| combines:
+				      \begin{itemize}
+					      \item \Verb|LocalFileExtractor|
+					      \item \Verb|FileToTableInterpreter|
+				      \end{itemize}
+				\item<4-> The new blocks are less flexible
+			\end{itemize}
+		\end{column}
+		\hfill
+		\begin{column}{0.5\linewidth}
+			\begin{figure}
+				\begin{subfigure}{0.3\linewidth}
+					\includesvg{assets/table_execs_def.ad.svg}
+				\end{subfigure}
+				\hfill
+				\only<2->{
+					\begin{subfigure}{0.3\linewidth}
+						\includesvg{assets/table_exec_file.ad.svg}
+					\end{subfigure}
+				}
+				\hfill
+				\only<3->{
+					\begin{subfigure}{0.3\linewidth}
+						\includesvg{assets/table_exec_local.ad.svg}
+					\end{subfigure}
+				}
+			\end{figure}
+		\end{column}
+	\end{columns}
+\end{frame}
+\begin{frame}[t]{Architecture}{\Verb|sqlite-loader-lib|}
+	\begin{itemize}[<+(1)->]
+		\item \emph{Polars} has no built-in database functionality
+		\item \Verb|PolarsSQLiteLoaderExecutor| uses \Verb|PolarsTable| methods to generate SQL statements
+		\item \emph{Polars} can export a \Verb|DataFrame| to the \emph{Arrow} IPC format
+		\item The new external library \Verb|sqlite-loader-lib| is created to read this format and handle database export
+		\item It is written in \emph{Rust} and uses \emph{NAPI-RS} to offer a \emph{TypeScript} API\footnotemark[1]
+		\item This is the same technology that \emph{Polars} uses\footnotemark[2]
+		      \begin{figure}
+			      \includesvg[height=0.5\FrameHeight]{assets/components.compd.svg}
+		      \end{figure}
+	\end{itemize}
+	\footnotetext[1]{\textcite{napi}}
+	\footnotetext[2]{\textcite{polars:src:napi}}
+\end{frame}
+\begin{frame}[t,fragile]{Architecture}{TableTransformer}
+	\begin{itemize}
+		\item \emph{Jayvee} used to transform tables row-by-row:
+		      \begin{onlyenv}<2>
+			      \begin{minted}[style=default]{python}
+newColumn = ...  # An empty column
+expression = transform.expression
+for row in inputColumns:
+	...  # add row to evaluation context
+	let value = evaluateExpression(expression, context)
+	newColumn.add(newColumn)
+	...  # remove row from evaluation context
+return newColumn
+				\end{minted}
+		      \end{onlyenv}
+		\item<3-> This is still possible, but \emph{Polars} offers its own way of transforming a \Verb|DataFrame|
+		      \only<3>{
+			      \begin{block}{\emph{Polars expression}}
+				      Describes a series of operations, that result in one or more columns, with automatic optimization and parallelization\footnotemark[1].
+			      \end{block}
+		      }
+		\item<4-> The new approach is to convert the transform's \emph{Jayvee} expression into a \emph{Polars} expression
+	\end{itemize}
+	\footnotetext[1]{\textcite{polars:docs:expr}}
+\end{frame}

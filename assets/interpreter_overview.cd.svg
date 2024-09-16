@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	contentStyleType="text/css" height="235px" preserveAspectRatio="none"
+	style="width:460px;height:235px;background:#FFFFFF;" version="1.1" viewBox="0 0 460 235"
+	width="460px" zoomAndPan="magnify">
+	<defs />
+	<g><!--class
+		BlockExecutor-->
+		<g id="elem_BlockExecutor">
+			<rect codeLine="3" fill="#F1F1F1" height="32" id="BlockExecutor" rx="2.5"
+				ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="131.9893"
+				x="50.5" y="10.5659" />
+			<ellipse cx="65.5" cy="26.5659" fill="#B4A7E5" rx="11" ry="11"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<path
+				d="M61.4219,22.3315 L61.4219,20.1753 L68.8125,20.1753 L68.8125,22.3315 L66.3438,22.3315 L66.3438,30.4097 L68.8125,30.4097 L68.8125,32.5659 L61.4219,32.5659 L61.4219,30.4097 L63.8906,30.4097 L63.8906,22.3315 L61.4219,22.3315 Z "
+				fill="#000000" />
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				font-style="italic" lengthAdjust="spacing" textLength="99.9893"
+				x="79.5" y="31.4126">BlockExecutor</text>
+		</g><!--class
+		IOTypeImplementation-->
+		<g id="elem_IOTypeImplementation">
+			<rect codeLine="5" fill="#F1F1F1" height="32" id="IOTypeImplementation"
+				rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;"
+				width="192.6514" x="261" y="10.5659" />
+			<ellipse cx="276" cy="26.5659" fill="#B4A7E5" rx="11" ry="11"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<path
+				d="M271.9219,22.3315 L271.9219,20.1753 L279.3125,20.1753 L279.3125,22.3315 L276.8438,22.3315 L276.8438,30.4097 L279.3125,30.4097 L279.3125,32.5659 L271.9219,32.5659 L271.9219,30.4097 L274.3906,30.4097 L274.3906,22.3315 L271.9219,22.3315 Z "
+				fill="#000000" />
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				font-style="italic" lengthAdjust="spacing" textLength="160.6514"
+				x="290" y="31.4126">IOTypeImplementation</text>
+		</g><!--class
+		Table-->
+		<g id="elem_Table">
+			<rect codeLine="8" fill="#F1F1F1" height="32" id="Table" rx="2.5" ry="2.5"
+				style="stroke:#181818;stroke-width:0.5;" width="70.5205" x="322"
+				y="103.5659" />
+			<ellipse cx="337" cy="119.5659" fill="#ADD1B2" rx="11" ry="11"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<path
+				d="M339.9688,125.2065 Q339.3906,125.5034 338.75,125.644 Q338.1094,125.8003 337.4063,125.8003 Q334.9063,125.8003 333.5781,124.1597 Q332.2656,122.5034 332.2656,119.3784 Q332.2656,116.2534 333.5781,114.5972 Q334.9063,112.9409 337.4063,112.9409 Q338.1094,112.9409 338.75,113.0972 Q339.4063,113.2534 339.9688,113.5503 L339.9688,116.269 Q339.3438,115.6909 338.75,115.4253 Q338.1563,115.144 337.5313,115.144 Q336.1875,115.144 335.5,116.2222 Q334.8125,117.2847 334.8125,119.3784 Q334.8125,121.4722 335.5,122.5503 Q336.1875,123.6128 337.5313,123.6128 Q338.1563,123.6128 338.75,123.3472 Q339.3438,123.0659 339.9688,122.4878 L339.9688,125.2065 Z "
+				fill="#000000" />
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" textLength="38.5205" x="351" y="124.4126">
+				Table</text>
+		</g><!--class
+		AbstractBlockExecutor-->
+		<g id="elem_AbstractBlockExecutor">
+			<rect codeLine="10" fill="#F1F1F1" height="32" id="AbstractBlockExecutor"
+				rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;"
+				width="190.7578" x="21" y="103.5659" />
+			<ellipse cx="36" cy="119.5659" fill="#A9DCDF" rx="11" ry="11"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<path
+				d="M36.1094,114.9097 L34.9531,119.9878 L37.2813,119.9878 L36.1094,114.9097 Z M34.625,112.6753 L37.6094,112.6753 L40.9688,125.0659 L38.5156,125.0659 L37.75,122.0034 L34.4688,122.0034 L33.7188,125.0659 L31.2813,125.0659 L34.625,112.6753 Z "
+				fill="#000000" />
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				font-style="italic" lengthAdjust="spacing" textLength="158.7578"
+				x="50" y="124.4126">AbstractBlockExecutor</text>
+		</g><!--class
+		TableTransformerExecutor-->
+		<g id="elem_TableTransformerExecutor">
+			<rect codeLine="11" fill="#F1F1F1" height="32" id="TableTransformerExecutor"
+				rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;"
+				width="218.9561" x="7" y="196.5659" />
+			<ellipse cx="22" cy="212.5659" fill="#ADD1B2" rx="11" ry="11"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<path
+				d="M24.9688,218.2065 Q24.3906,218.5034 23.75,218.644 Q23.1094,218.8003 22.4063,218.8003 Q19.9063,218.8003 18.5781,217.1597 Q17.2656,215.5034 17.2656,212.3784 Q17.2656,209.2534 18.5781,207.5972 Q19.9063,205.9409 22.4063,205.9409 Q23.1094,205.9409 23.75,206.0972 Q24.4063,206.2534 24.9688,206.5503 L24.9688,209.269 Q24.3438,208.6909 23.75,208.4253 Q23.1563,208.144 22.5313,208.144 Q21.1875,208.144 20.5,209.2222 Q19.8125,210.2847 19.8125,212.3784 Q19.8125,214.4722 20.5,215.5503 Q21.1875,216.6128 22.5313,216.6128 Q23.1563,216.6128 23.75,216.3472 Q24.3438,216.0659 24.9688,215.4878 L24.9688,218.2065 Z "
+				fill="#000000" />
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" textLength="186.9561" x="36" y="217.4126">
+				TableTransformerExecutor</text>
+		</g><!--link
+		BlockExecutor to IOTypeImplementation-->
+		<g id="link_BlockExecutor_IOTypeImplementation">
+			<path codeLine="6"
+				d="M179,42.6059 C187.44,44.2359 196.02,45.6359 204.25,46.5659 C232.11,49.7059 262.76,46.9459 289.29,42.5859 "
+				fill="none" id="BlockExecutor-IOTypeImplementation"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<text fill="#000000" font-family="sans-serif" font-size="13"
+				lengthAdjust="spacing" textLength="33.4395" x="205.25" y="42.6328">
+				input</text>
+		</g><!--link
+		BlockExecutor to IOTypeImplementation-->
+		<g id="link_BlockExecutor_IOTypeImplementation">
+			<path codeLine="7"
+				d="M182.67,26.5659 C206.78,26.5659 234.56,26.5659 260.77,26.5659 "
+				fill="none" id="BlockExecutor-IOTypeImplementation-1"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<text fill="#000000" font-family="sans-serif" font-size="13"
+				lengthAdjust="spacing" textLength="42.8784" x="200.75" y="19.6328">
+				output</text>
+		</g><!--reverse
+		link IOTypeImplementation to Table-->
+		<g id="link_IOTypeImplementation_Table">
+			<path d="M357.5,60.5959 C357.5,77.4559 357.5,86.6459 357.5,103.5159 "
+				fill="none" id="IOTypeImplementation-backto-Table"
+				style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;" />
+			<polygon fill="none"
+				points="357.5,42.5959,351.5,60.5959,363.5,60.5959,357.5,42.5959"
+				style="stroke:#181818;stroke-width:1.0;" />
+		</g><!--reverse
+		link BlockExecutor to AbstractBlockExecutor-->
+		<g id="link_BlockExecutor_AbstractBlockExecutor">
+			<path d="M116.5,60.5959 C116.5,77.4559 116.5,86.6459 116.5,103.5159 "
+				fill="none" id="BlockExecutor-backto-AbstractBlockExecutor"
+				style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;" />
+			<polygon fill="none"
+				points="116.5,42.5959,110.5,60.5959,122.5,60.5959,116.5,42.5959"
+				style="stroke:#181818;stroke-width:1.0;" />
+		</g><!--reverse
+		link AbstractBlockExecutor to TableTransformerExecutor-->
+		<g id="link_AbstractBlockExecutor_TableTransformerExecutor">
+			<path d="M116.5,153.5959 C116.5,170.4559 116.5,179.6459 116.5,196.5159 "
+				fill="none"
+				id="AbstractBlockExecutor-backto-TableTransformerExecutor"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<polygon fill="none"
+				points="116.5,135.5959,110.5,153.5959,122.5,153.5959,116.5,135.5959"
+				style="stroke:#181818;stroke-width:1.0;" />
+		</g><!--SRC=[TOzB3i8m34JNxIbyWLw07KWikcBJ2pZfL4JaKpcEL6vFfG8YebrQVc_6lhiH510C9BTjqxYea8ajwEAJVLmNsA99wbL_6vup-Z1x14HbTIckG6KGTRGBdiZ5kUWVtntGgUY6Myyvqy36Wzm7oll7h3YRhC9MQVFExx4k_Scf_wtg1k6OfoG1yZMnAE9uaFi2]-->
+	</g>
+</svg>

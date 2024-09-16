@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	contentStyleType="text/css" height="405px" preserveAspectRatio="none"
+	style="width:158px;height:405px;background:#FFFFFF;" version="1.1" viewBox="0 0 158 405"
+	width="158px" zoomAndPan="magnify">
+	<defs />
+	<g>
+		<ellipse cx="79.3184" cy="20" fill="#222222" rx="10" ry="10"
+			style="stroke:#222222;stroke-width:1.0;" />
+		<rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="131.5625" x="13.5371"
+			y="71.3989" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="111.5625" x="23.5371" y="92.5376">:LocalFileExtractor</text>
+		<rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="136.6367" x="11"
+			y="146.7666" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="116.6367" x="21" y="167.9053">:TextFileInterpreter</text>
+		<rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="134.3223" x="12.1572"
+			y="222.1343" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="114.3223" x="22.1572" y="243.2729">:CSVFileInterpreter</text>
+		<rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="122.1816" x="18.2275"
+			y="297.502" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="102.1816" x="28.2275" y="318.6406">:TableInterpreter</text>
+		<ellipse cx="79.3184" cy="383.8696" fill="none" rx="11" ry="11"
+			style="stroke:#222222;stroke-width:1.0;" />
+		<ellipse cx="79.3184" cy="383.8696" fill="#222222" rx="6" ry="6"
+			style="stroke:#222222;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="79.3184" x2="79.3184" y1="30"
+			y2="71.3989" />
+		<polygon fill="#181818"
+			points="75.3184,61.3989,79.3184,71.3989,83.3184,61.3989,79.3184,65.3989"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing"
+			textLength="28.6978" x="83.3184" y="51.3047">None</text>
+		<line style="stroke:#181818;stroke-width:1.0;" x1="79.3184" x2="79.3184"
+			y1="105.3677" y2="146.7666" />
+		<polygon fill="#181818"
+			points="75.3184,136.7666,79.3184,146.7666,83.3184,136.7666,79.3184,140.7666"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing"
+			textLength="19.207" x="83.3184" y="126.6724">File</text>
+		<line style="stroke:#181818;stroke-width:1.0;" x1="79.3184" x2="79.3184"
+			y1="180.7354" y2="222.1343" />
+		<polygon fill="#181818"
+			points="75.3184,212.1343,79.3184,222.1343,83.3184,212.1343,79.3184,216.1343"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing"
+			textLength="43.5166" x="83.3184" y="202.04">TextFile</text>
+		<line style="stroke:#181818;stroke-width:1.0;" x1="79.3184" x2="79.3184"
+			y1="256.103" y2="297.502" />
+		<polygon fill="#181818"
+			points="75.3184,287.502,79.3184,297.502,83.3184,287.502,79.3184,291.502"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing"
+			textLength="31.8022" x="83.3184" y="277.4077">Sheet</text>
+		<line style="stroke:#181818;stroke-width:1.0;" x1="79.3184" x2="79.3184"
+			y1="331.4707" y2="372.8696" />
+		<polygon fill="#181818"
+			points="75.3184,362.8696,79.3184,372.8696,83.3184,362.8696,79.3184,366.8696"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing"
+			textLength="30.2661" x="83.3184" y="352.7754">Table</text><!--SRC=[Aov9B2hXuWG1NJi5l_oyL6i8pyhA9pyvCSSjCoVLjQAaA36v9B_86guG90nN699QKG8IyCmhIIqgA4e5aWYLC4cuQkVWC9oAWpDIKqiGvYOcuJ8K90Fb5fVa5m00]-->
+	</g>
+</svg>

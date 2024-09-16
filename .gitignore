@@ -287,5 +287,7 @@ svg-inkscape/
 #!/template-art/**/
 #!/template-art/**/.gitkeep
 
+TODO.md
+
 main.pdf
 main-poster.pdf

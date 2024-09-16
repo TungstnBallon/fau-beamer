@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	contentStyleType="text/css" height="800px" preserveAspectRatio="none"
+	style="width:471px;height:800px;background:#FFFFFF;" version="1.1" viewBox="0 0 471 800"
+	width="471px" zoomAndPan="magnify">
+	<defs />
+	<g>
+		<ellipse cx="309.4995" cy="20" fill="#222222" rx="10" ry="10"
+			style="stroke:#222222;stroke-width:1.0;" />
+		<path
+			d="M10,46.8516 L10,87.1172 A0,0 0 0 0 10,87.1172 L209.6675,87.1172 A0,0 0 0 0 209.6675,87.1172 L209.6675,70.9844 L229.6675,66.9844 L209.6675,62.9844 L209.6675,56.8516 L199.6675,46.8516 L10,46.8516 A0,0 0 0 0 10,46.8516 "
+			fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" />
+		<path d="M199.6675,46.8516 L199.6675,56.8516 L209.6675,56.8516 L199.6675,46.8516 "
+			fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" />
+		<text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing"
+			textLength="178.6675" x="16" y="63.9185">Also ensures the table data</text>
+		<text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing"
+			textLength="127.9497" x="16" y="79.0513">is available on disk.</text>
+		<rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="159.6641" x="229.6675"
+			y="50" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="139.6641" x="239.6675" y="71.1387">Open the Arrow IPC file</text>
+		<rect fill="#F1F1F1" height="47.9375" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="149.0117" x="234.9937"
+			y="107.1172" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="129.0117" x="244.9937" y="128.2559">Open a connection to</text>
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="122.127" x="244.9937" y="142.2246">the SQLite database</text>
+		<rect fill="#F1F1F1" height="47.9375" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="138.8516" x="240.0737"
+			y="223.457" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="118.8516" x="250.0737" y="244.5957">Drop the table from</text>
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="79.1426" x="250.0737" y="258.5645">the database</text>
+		<polygon fill="#F1F1F1"
+			points="208.8479,175.0547,410.1511,175.0547,422.1511,187.0547,410.1511,199.0547,208.8479,199.0547,196.8479,187.0547,208.8479,175.0547"
+			style="stroke:#181818;stroke-width:0.5;" />
+		<text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing"
+			textLength="19.0083" x="313.4995" y="209.2651">yes</text>
+		<text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing"
+			textLength="201.3032" x="208.8479" y="190.8628">The dropTable block property
+			is true</text>
+		<text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing"
+			textLength="13.7017" x="422.1511" y="184.4604">no</text>
+		<polygon fill="#F1F1F1"
+			points="309.4995,291.3945,321.4995,303.3945,309.4995,315.3945,297.4995,303.3945,309.4995,291.3945"
+			style="stroke:#181818;stroke-width:0.5;" />
+		<rect fill="#F1F1F1" height="47.9375" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="132.6055" x="243.1968"
+			y="335.3945" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="112.6055" x="253.1968" y="356.5332">Create the table in</text>
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="79.1426" x="253.1968" y="370.502">the database</text>
+		<rect fill="#F1F1F1" height="47.9375" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="219.7285" x="199.6353"
+			y="403.332" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="199.7285" x="209.6353" y="424.4707">Prepare the database
+			connection</text>
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="157.6406" x="209.6353" y="438.4395">for appending to the table</text>
+		<rect fill="#F1F1F1" height="47.9375" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="220.8301" x="199.0845"
+			y="515.2695" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="200.8301" x="209.0845" y="536.4082">Read an Arrow record batch
+			from</text>
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="103.7988" x="209.0845" y="550.377">the Arrow IPC file</text>
+		<rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="219.9395" x="199.5298"
+			y="583.207" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="199.9395" x="209.5298" y="604.3457">Append record batch to the
+			table</text>
+		<rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="236.5684" x="191.2153"
+			y="637.1758" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="216.5684" x="201.2153" y="658.3145">update the number of
+			inserted lines</text>
+		<polygon fill="#F1F1F1"
+			points="197.3484,471.2695,421.6506,471.2695,433.6506,483.2695,421.6506,495.2695,197.3484,495.2695,185.3484,483.2695,197.3484,471.2695"
+			style="stroke:#181818;stroke-width:0.5;" />
+		<text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing"
+			textLength="224.3022" x="197.3484" y="487.0776">The Arrow IPC file is not
+			read completely</text>
+		<rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="192.4238" x="213.2876"
+			y="713.1445" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="172.4238" x="223.2876" y="734.2832">Log number of inserted lines</text>
+		<ellipse cx="309.4995" cy="778.1133" fill="none" rx="11" ry="11"
+			style="stroke:#222222;stroke-width:1.0;" />
+		<ellipse cx="309.4995" cy="778.1133" fill="#222222" rx="6" ry="6"
+			style="stroke:#222222;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="309.4995" x2="309.4995" y1="30"
+			y2="50" />
+		<polygon fill="#181818" points="305.4995,40,309.4995,50,313.4995,40,309.4995,44"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="309.4995" x2="309.4995"
+			y1="83.9688" y2="107.1172" />
+		<polygon fill="#181818"
+			points="305.4995,97.1172,309.4995,107.1172,313.4995,97.1172,309.4995,101.1172"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="309.4995" x2="309.4995"
+			y1="199.0547" y2="223.457" />
+		<polygon fill="#181818"
+			points="305.4995,213.457,309.4995,223.457,313.4995,213.457,309.4995,217.457"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="422.1511" x2="434.1511"
+			y1="187.0547" y2="187.0547" />
+		<polygon fill="#181818"
+			points="430.1511,237.4258,434.1511,247.4258,438.1511,237.4258,434.1511,241.4258"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="434.1511" x2="434.1511"
+			y1="187.0547" y2="303.3945" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="434.1511" x2="321.4995"
+			y1="303.3945" y2="303.3945" />
+		<polygon fill="#181818"
+			points="331.4995,299.3945,321.4995,303.3945,331.4995,307.3945,327.4995,303.3945"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="309.4995" x2="309.4995"
+			y1="271.3945" y2="291.3945" />
+		<polygon fill="#181818"
+			points="305.4995,281.3945,309.4995,291.3945,313.4995,281.3945,309.4995,285.3945"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="309.4995" x2="309.4995"
+			y1="155.0547" y2="175.0547" />
+		<polygon fill="#181818"
+			points="305.4995,165.0547,309.4995,175.0547,313.4995,165.0547,309.4995,169.0547"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="309.4995" x2="309.4995"
+			y1="315.3945" y2="335.3945" />
+		<polygon fill="#181818"
+			points="305.4995,325.3945,309.4995,335.3945,313.4995,325.3945,309.4995,329.3945"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="309.4995" x2="309.4995"
+			y1="383.332" y2="403.332" />
+		<polygon fill="#181818"
+			points="305.4995,393.332,309.4995,403.332,313.4995,393.332,309.4995,397.332"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="309.4995" x2="309.4995"
+			y1="563.207" y2="583.207" />
+		<polygon fill="#181818"
+			points="305.4995,573.207,309.4995,583.207,313.4995,573.207,309.4995,577.207"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="309.4995" x2="309.4995"
+			y1="617.1758" y2="637.1758" />
+		<polygon fill="#181818"
+			points="305.4995,627.1758,309.4995,637.1758,313.4995,627.1758,309.4995,631.1758"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="309.4995" x2="309.4995"
+			y1="495.2695" y2="515.2695" />
+		<polygon fill="#181818"
+			points="305.4995,505.2695,309.4995,515.2695,313.4995,505.2695,309.4995,509.2695"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="309.4995" x2="309.4995"
+			y1="671.1445" y2="681.1445" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="309.4995" x2="445.6506"
+			y1="681.1445" y2="681.1445" />
+		<polygon fill="#181818"
+			points="441.6506,591.207,445.6506,581.207,449.6506,591.207,445.6506,587.207"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="445.6506" x2="445.6506"
+			y1="483.2695" y2="681.1445" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="445.6506" x2="433.6506"
+			y1="483.2695" y2="483.2695" />
+		<polygon fill="#181818"
+			points="443.6506,479.2695,433.6506,483.2695,443.6506,487.2695,439.6506,483.2695"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="185.3484" x2="173.3484"
+			y1="483.2695" y2="483.2695" />
+		<polygon fill="#181818"
+			points="169.3484,577.207,173.3484,587.207,177.3484,577.207,173.3484,581.207"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="173.3484" x2="173.3484"
+			y1="483.2695" y2="693.1445" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="173.3484" x2="309.4995"
+			y1="693.1445" y2="693.1445" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="309.4995" x2="309.4995"
+			y1="693.1445" y2="713.1445" />
+		<polygon fill="#181818"
+			points="305.4995,703.1445,309.4995,713.1445,313.4995,703.1445,309.4995,707.1445"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="309.4995" x2="309.4995"
+			y1="451.2695" y2="471.2695" />
+		<polygon fill="#181818"
+			points="305.4995,461.2695,309.4995,471.2695,313.4995,461.2695,309.4995,465.2695"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="309.4995" x2="309.4995"
+			y1="747.1133" y2="767.1133" />
+		<polygon fill="#181818"
+			points="305.4995,757.1133,309.4995,767.1133,313.4995,757.1133,309.4995,761.1133"
+			style="stroke:#181818;stroke-width:1.0;" /><!--SRC=[VL51RW8n33pJL_W8bpvWEI5wgOHKslA1xCOB4S6E76yHlw-J1R6qLK-hs3FZcTciJlHfDclU4XBe0M4bmcTutQwX3n6NjYDMjCygPWQaF0ZcYbJNHWJlrDasP71VBiGwOm8Vyl7PvaWUhWBZ3GST4s6dmL3ADYzQd-
+		-ReADOwt8z6tgOxspbXTEkohQHkoCaUwFe1Uoaoe2BOePWVi6yA5TUR3_nrmkVhaUcwXWpmfnuCNeCVQ6k1Psvk9C3_K5jjeB9oOYxBIQf3DApW4kf2DFUKjubYy3vOCsEuHxRBf6iB30RtWHFAQ9YlDHO7sNcwCeGx5Wyj4wxmpJYxx_NhAgFHyPFHysG_2qv3QSM1RYtzDcAHWyn4ERbs5GrNoWRtl-BpShf6m00]-->
+	</g>
+</svg>

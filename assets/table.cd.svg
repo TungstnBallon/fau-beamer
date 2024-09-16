@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	contentStyleType="text/css" height="264px" preserveAspectRatio="none"
+	style="width:443px;height:264px;background:#FFFFFF;" version="1.1" viewBox="0 0 443 264"
+	width="443px" zoomAndPan="magnify">
+	<defs />
+	<g><!--class
+		Table-->
+		<g id="elem_Table">
+			<rect codeLine="1" fill="#F1F1F1" height="243.5625" id="Table" rx="2.5"
+				ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="422.4707"
+				x="7" y="7" />
+			<ellipse cx="194.7251" cy="23" fill="#A9DCDF" rx="11" ry="11"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<path
+				d="M194.8345,18.3438 L193.6782,23.4219 L196.0063,23.4219 L194.8345,18.3438 Z M193.3501,16.1094 L196.3345,16.1094 L199.6938,28.5 L197.2407,28.5 L196.4751,25.4375 L193.1938,25.4375 L192.4438,28.5 L190.0063,28.5 L193.3501,16.1094 Z "
+				fill="#000000" />
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				font-style="italic" lengthAdjust="spacing" textLength="38.5205"
+				x="215.2251" y="27.8467">Table</text>
+			<line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="428.4707" y1="39"
+				y2="39" />
+			<line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="428.4707" y1="47"
+				y2="47" />
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				font-style="italic" lengthAdjust="spacing" textLength="185.2197"
+				x="13" y="63.9951">&#171;getter&#187; nRows(): number</text>
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				font-style="italic" lengthAdjust="spacing" textLength="213.541"
+				x="13" y="80.292">&#171;getter&#187; nColumns(): number</text>
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				font-style="italic" lengthAdjust="spacing" textLength="362.4688"
+				x="13" y="96.5889">&#171;getter&#187; columns():
+				ReadonlyArray&lt;TableColumn&gt;</text>
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				font-style="italic" lengthAdjust="spacing" textLength="294.7656"
+				x="13" y="112.8857">withColumn(column: TableColumn): Table</text>
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				font-style="italic" lengthAdjust="spacing" textLength="361.9424"
+				x="13" y="129.1826">getColumn(name: string): TableColumn | undefined</text>
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				font-style="italic" lengthAdjust="spacing" textLength="96.25" x="13"
+				y="145.4795">clone(): Table</text>
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				font-style="italic" lengthAdjust="spacing" textLength="331.4473"
+				x="13" y="161.7764">acceptVisitor&lt;R&gt;(visitor:
+				IoTypeVisitor&lt;R&gt;): R</text>
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				font-style="italic" lengthAdjust="spacing" textLength="200.4775"
+				x="13" y="178.0732">isPolars(): this is PolarsTable</text>
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				font-style="italic" lengthAdjust="spacing" textLength="204.6201"
+				x="13" y="194.3701">isTypescript(): this is TsTable</text>
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" text-decoration="underline"
+				textLength="395.999" x="13" y="210.667">generateDropTableStatement(tableName:
+				string): string</text>
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				font-style="italic" lengthAdjust="spacing" textLength="410.4707"
+				x="13" y="226.9639">generateInsertValuesStatement(tableName:
+				string): string</text>
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				font-style="italic" lengthAdjust="spacing" textLength="408.8369"
+				x="13" y="243.2607">generateCreateTableStatement(tableName: string):
+				string</text>
+		</g><!--SRC=[fL3DQiCm33vlJw5ZyWeX14PtwMMCBlIkE5fhSEHWAIkXwxilYGDjI0iRyy58-dxqWvLeGADW78f0YPKZE3y_3U-CCtQ1F3-GAeMY0DxvaoHf1jmr5OM9-O0AlF6kQ_YNT7CbxmXhpwv_2G7xV1egMXKhWvFLOyIIQ9313J-TivLiw3gh61lAOAXRFgGBCNn3npLzMgPwPM2SPqeU-gCnrEhUYbKVybsHVCKmWwql-vQkoBZkIcxbtJiCqp7qQ6KeGApSRsTbD1KJRAktcdB15qMrPboUAQ3IQ_3jX7yC03N4ckYOlYrF4eCx9umkMnOAkaVNaVpBQ1De-FyqqEK7]-->
+	</g>
+</svg>

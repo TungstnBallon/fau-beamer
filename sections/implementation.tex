@@ -1,0 +1,88 @@
+\section{Implementation}
+\begin{frame}[t,fragile]{Implementation}{PolarsTable} % FIXME this whole slide
+	\begin{itemize}
+		\item \Verb|PolarsTable.clone()| does not clone the attribute \Verb|PolarsTable.valueTypeProvider|, because it should be treated as a singleton
+		\item \Verb|PolarsTable.withColumn(...)| distinguishes between a column and a \emph{Polars} expression, by checking whether the object has the property \Verb|series|:
+		      \begin{center}
+			      % \small
+			      \begin{minted}{typescript}
+	withColumn(column: PolarsTableColumn | pl.Expr): PolarsTable {
+		const tmp = 'series' in column ? column.series : column;
+		const ndf = this.df.withColumn(tmp);
+		return new PolarsTable(ndf, this.valueTypeProvider);
+	}
+\end{minted}
+		      \end{center}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[t]{Implementation}{Selecting the correct block executor}
+	\centering
+	\includesvg[height=0.5\FrameHeight]{assets/main_dia.ad.svg}
+	\pause
+	\vfill
+	\includesvg[width=\textwidth]{assets/choose_block_executor.ad.svg}
+\end{frame}
+
+\begin{frame}[t]{Implementation}{((Local)FileTo)TableInterpreter}
+	\begin{itemize}[<+(1)->]
+		\item \Verb|TableInterpreter|:
+		      \begin{enumerate}
+			      \item Receive row-oriented CSV data
+			      \item Transpose the CSV data
+			      \item Parse values using "old" functionality
+			      \item Create a new \Verb|DataFrame| using the columnar data
+		      \end{enumerate}
+		\item \Verb|FileToTableInterpreter|:
+		      \begin{enumerate}
+			      \item Receive binary data
+			      \item use \emph{Polars} to parse the bytes into a \Verb|DataFrame|
+		      \end{enumerate}
+		\item \Verb|LocalFileToTableExtractor|:
+		      \begin{enumerate}
+			      \item Receive a file path
+			      \item use \emph{Polars} to parse the file contents into a \Verb|DataFrame|
+		      \end{enumerate}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[t]{Implementation}{TableTransformer}
+	\begin{columns}[T]
+		\begin{column}{0.5\linewidth}
+			\begin{enumerate}[<+(1)->]
+				\item Use the transform definition to create a new \Verb|TransformExecutor|
+				\item Execute \Verb|TransformExecutor|:
+				      \begin{enumerate}
+					      \item Transform the \emph{Jayvee} expression into a \emph{Polars} expression
+					      \item Ensure the resulting column has the correct type
+				      \end{enumerate}
+				\item Rename the resulting column to the specified name
+			\end{enumerate}
+		\end{column}
+		\begin{column}{0.5\linewidth}
+			\includesvg{assets/transform_exec.sd.svg}
+		\end{column}
+	\end{columns}
+
+\end{frame}
+\begin{frame}[t]{Implementation}{Converting \emph{Jayvee} expressions to \emph{Polars}}
+	\only<1>{
+		There are three categories of \emph{Jayvee} expressions\footnotemark:
+		\begin{description}
+			\item[Literal] Wrap the literal in \Verb|pl.lit(...)|
+			\item[Variable] Look up the value in the evaluation context
+			\item[Operator] Use the interface method \Verb|PolarsOperator.polarsEvaluate(...)|
+		\end{description}
+		\footnotetext{\textcite{jvalue:jayvee:docs:expressions}}
+	}
+	\only<2>{
+		\begin{figure}
+			\includesvg[height=\FrameHeight]{assets/eval_expr.sd.svg}
+		\end{figure}
+	}
+\end{frame}
+\begin{frame}[t]{Implementation}{\Verb|sqlite-loader-lib|}
+	\begin{figure}
+		\includesvg[height=\FrameHeight]{assets/load_sqlite.ad.svg}
+	\end{figure}
+\end{frame}

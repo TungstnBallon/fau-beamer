@@ -1,0 +1,282 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	contentStyleType="text/css" height="289px" preserveAspectRatio="none"
+	style="width:2235px;height:289px;background:#FFFFFF;" version="1.1" viewBox="0 0 2235 289"
+	width="2235px" zoomAndPan="magnify">
+	<defs />
+	<g>
+		<ellipse cx="1122.9961" cy="20" fill="#222222" rx="10" ry="10"
+			style="stroke:#222222;stroke-width:1.0;" />
+		<polygon fill="#F1F1F1"
+			points="181.1929,50,400.4624,50,412.4624,62,400.4624,74,181.1929,74,169.1929,62,181.1929,50"
+			style="stroke:#181818;stroke-width:0.5;" />
+		<text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing"
+			textLength="22.5747" x="294.8276" y="84.2104">true</text>
+		<text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing"
+			textLength="219.2695" x="181.1929" y="65.8081">blockTypeName ===
+			'TableInterpreter'</text>
+		<polygon fill="#F1F1F1"
+			points="235.9082,105.7104,345.7471,105.7104,357.7471,117.7104,345.7471,129.7104,235.9082,129.7104,223.9082,117.7104,235.9082,105.7104"
+			style="stroke:#181818;stroke-width:0.5;" />
+		<text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing"
+			textLength="109.8389" x="235.9082" y="121.5186">--use-polars CLI flag</text>
+		<text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing"
+			textLength="22.5747" x="201.3335" y="115.1162">true</text>
+		<text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing"
+			textLength="26.168" x="357.7471" y="115.1162">false</text>
+		<rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="275.5449" x="11"
+			y="139.7104" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="255.5449" x="21" y="160.8491">blockTypeName =
+			'PolarsTableInterpreter'</text>
+		<ellipse cx="148.7725" cy="219.6792" fill="none" rx="11" ry="11"
+			style="stroke:#222222;stroke-width:1.0;" />
+		<ellipse cx="148.7725" cy="219.6792" fill="#222222" rx="6" ry="6"
+			style="stroke:#222222;stroke-width:1.0;" />
+		<rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="252.6758" x="306.5449"
+			y="139.7104" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="232.6758" x="316.5449" y="160.8491">blockTypeName =
+			'TsTableInterpreter'</text>
+		<ellipse cx="432.8828" cy="219.6792" fill="none" rx="11" ry="11"
+			style="stroke:#222222;stroke-width:1.0;" />
+		<ellipse cx="432.8828" cy="219.6792" fill="#222222" rx="6" ry="6"
+			style="stroke:#222222;stroke-width:1.0;" />
+		<polygon fill="#F1F1F1"
+			points="744.2124,50,971.603,50,983.603,62,971.603,74,744.2124,74,732.2124,62,744.2124,50"
+			style="stroke:#181818;stroke-width:0.5;" />
+		<text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing"
+			textLength="22.5747" x="861.9077" y="84.2104">true</text>
+		<text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing"
+			textLength="227.3906" x="744.2124" y="65.8081">blockTypeName ===
+			'TableTransformer'</text>
+		<polygon fill="#F1F1F1"
+			points="802.9883,105.7104,912.8271,105.7104,924.8271,117.7104,912.8271,129.7104,802.9883,129.7104,790.9883,117.7104,802.9883,105.7104"
+			style="stroke:#181818;stroke-width:0.5;" />
+		<text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing"
+			textLength="109.8389" x="802.9883" y="121.5186">--use-polars CLI flag</text>
+		<text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing"
+			textLength="22.5747" x="768.4136" y="115.1162">true</text>
+		<text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing"
+			textLength="26.168" x="924.8271" y="115.1162">false</text>
+		<rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="284.4043" x="569.2207"
+			y="139.7104" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="264.4043" x="579.2207" y="160.8491">blockTypeName =
+			'PolarsTableTransformer'</text>
+		<ellipse cx="711.4229" cy="219.6792" fill="none" rx="11" ry="11"
+			style="stroke:#222222;stroke-width:1.0;" />
+		<ellipse cx="711.4229" cy="219.6792" fill="#222222" rx="6" ry="6"
+			style="stroke:#222222;stroke-width:1.0;" />
+		<rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="261.5352" x="873.625"
+			y="139.7104" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="241.5352" x="883.625" y="160.8491">blockTypeName =
+			'TsTableTransformer'</text>
+		<ellipse cx="1004.3926" cy="219.6792" fill="none" rx="11" ry="11"
+			style="stroke:#222222;stroke-width:1.0;" />
+		<ellipse cx="1004.3926" cy="219.6792" fill="#222222" rx="6" ry="6"
+			style="stroke:#222222;stroke-width:1.0;" />
+		<polygon fill="#F1F1F1"
+			points="1464.0134,50,1667.0999,50,1679.0999,62,1667.0999,74,1464.0134,74,1452.0134,62,1464.0134,50"
+			style="stroke:#181818;stroke-width:0.5;" />
+		<text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing"
+			textLength="22.5747" x="1569.5566" y="84.2104">true</text>
+		<text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing"
+			textLength="203.0864" x="1464.0134" y="65.8081">blockTypeName ===
+			'SQLiteLoader'</text>
+		<text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing"
+			textLength="26.168" x="1679.0999" y="59.4058">false</text>
+		<polygon fill="#F1F1F1"
+			points="1223.8486,130.7104,1341.3252,130.7104,1353.3252,142.7104,1341.3252,154.7104,1223.8486,154.7104,1211.8486,142.7104,1223.8486,130.7104"
+			style="stroke:#181818;stroke-width:0.5;" />
+		<text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing"
+			textLength="22.5747" x="1286.5869" y="164.9209">true</text>
+		<text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing"
+			textLength="117.4766" x="1223.8486" y="146.5186">--use-rusqlite CLI flag</text>
+		<rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="274.8535" x="1145.1602"
+			y="187.5151" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="254.8535" x="1155.1602" y="208.6538">blockTypeName =
+			'RustTableTransformer'</text>
+		<ellipse cx="1282.5869" cy="267.4839" fill="none" rx="11" ry="11"
+			style="stroke:#222222;stroke-width:1.0;" />
+		<ellipse cx="1282.5869" cy="267.4839" fill="#222222" rx="6" ry="6"
+			style="stroke:#222222;stroke-width:1.0;" />
+		<polygon fill="#F1F1F1"
+			points="1517.2964,130.7104,1627.1353,130.7104,1639.1353,142.7104,1627.1353,154.7104,1517.2964,154.7104,1505.2964,142.7104,1517.2964,130.7104"
+			style="stroke:#181818;stroke-width:0.5;" />
+		<text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing"
+			textLength="22.5747" x="1576.2158" y="164.9209">true</text>
+		<text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing"
+			textLength="109.8389" x="1517.2964" y="146.5186">--use-polars CLI flag</text>
+		<text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing"
+			textLength="26.168" x="1639.1353" y="140.1162">false</text>
+		<rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="284.4043" x="1430.0137"
+			y="187.5151" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="264.4043" x="1440.0137" y="208.6538">blockTypeName =
+			'PolarsTableTransformer'</text>
+		<ellipse cx="1572.2158" cy="267.4839" fill="none" rx="11" ry="11"
+			style="stroke:#222222;stroke-width:1.0;" />
+		<ellipse cx="1572.2158" cy="267.4839" fill="#222222" rx="6" ry="6"
+			style="stroke:#222222;stroke-width:1.0;" />
+		<rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="261.5352" x="1724.418"
+			y="184.1128" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="241.5352" x="1734.418" y="205.2515">blockTypeName =
+			'TsTableTransformer'</text>
+		<ellipse cx="1855.1855" cy="264.0815" fill="none" rx="11" ry="11"
+			style="stroke:#222222;stroke-width:1.0;" />
+		<ellipse cx="1855.1855" cy="264.0815" fill="#222222" rx="6" ry="6"
+			style="stroke:#222222;stroke-width:1.0;" />
+		<rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5"
+			style="stroke:#181818;stroke-width:0.5;" width="229.0391" x="1995.9531"
+			y="180.7104" />
+		<text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing"
+			textLength="209.0391" x="2005.9531" y="201.8491">blockTypeName remains the
+			same</text>
+		<ellipse cx="2110.4727" cy="260.6792" fill="none" rx="11" ry="11"
+			style="stroke:#222222;stroke-width:1.0;" />
+		<ellipse cx="2110.4727" cy="260.6792" fill="#222222" rx="6" ry="6"
+			style="stroke:#222222;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="148.7725" x2="148.7725"
+			y1="173.6792" y2="208.6792" />
+		<polygon fill="#181818"
+			points="144.7725,198.6792,148.7725,208.6792,152.7725,198.6792,148.7725,202.6792"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="432.8828" x2="432.8828"
+			y1="173.6792" y2="208.6792" />
+		<polygon fill="#181818"
+			points="428.8828,198.6792,432.8828,208.6792,436.8828,198.6792,432.8828,202.6792"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="223.9082" x2="148.7725"
+			y1="117.7104" y2="117.7104" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="148.7725" x2="148.7725"
+			y1="117.7104" y2="139.7104" />
+		<polygon fill="#181818"
+			points="144.7725,129.7104,148.7725,139.7104,152.7725,129.7104,148.7725,133.7104"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="357.7471" x2="432.8828"
+			y1="117.7104" y2="117.7104" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="432.8828" x2="432.8828"
+			y1="117.7104" y2="139.7104" />
+		<polygon fill="#181818"
+			points="428.8828,129.7104,432.8828,139.7104,436.8828,129.7104,432.8828,133.7104"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="711.4229" x2="711.4229"
+			y1="173.6792" y2="208.6792" />
+		<polygon fill="#181818"
+			points="707.4229,198.6792,711.4229,208.6792,715.4229,198.6792,711.4229,202.6792"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="1004.3926" x2="1004.3926"
+			y1="173.6792" y2="208.6792" />
+		<polygon fill="#181818"
+			points="1000.3926,198.6792,1004.3926,208.6792,1008.3926,198.6792,1004.3926,202.6792"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="790.9883" x2="711.4229"
+			y1="117.7104" y2="117.7104" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="711.4229" x2="711.4229"
+			y1="117.7104" y2="139.7104" />
+		<polygon fill="#181818"
+			points="707.4229,129.7104,711.4229,139.7104,715.4229,129.7104,711.4229,133.7104"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="924.8271" x2="1004.3926"
+			y1="117.7104" y2="117.7104" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="1004.3926" x2="1004.3926"
+			y1="117.7104" y2="139.7104" />
+		<polygon fill="#181818"
+			points="1000.3926,129.7104,1004.3926,139.7104,1008.3926,129.7104,1004.3926,133.7104"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="1282.5869" x2="1282.5869"
+			y1="221.4839" y2="256.4839" />
+		<polygon fill="#181818"
+			points="1278.5869,246.4839,1282.5869,256.4839,1286.5869,246.4839,1282.5869,250.4839"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="1572.2158" x2="1572.2158"
+			y1="221.4839" y2="256.4839" />
+		<polygon fill="#181818"
+			points="1568.2158,246.4839,1572.2158,256.4839,1576.2158,246.4839,1572.2158,250.4839"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="1855.1855" x2="1855.1855"
+			y1="218.0815" y2="253.0815" />
+		<polygon fill="#181818"
+			points="1851.1855,243.0815,1855.1855,253.0815,1859.1855,243.0815,1855.1855,247.0815"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="1282.5869" x2="1282.5869"
+			y1="154.7104" y2="187.5151" />
+		<polygon fill="#181818"
+			points="1278.5869,177.5151,1282.5869,187.5151,1286.5869,177.5151,1282.5869,181.5151"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="1572.2158" x2="1572.2158"
+			y1="154.7104" y2="187.5151" />
+		<polygon fill="#181818"
+			points="1568.2158,177.5151,1572.2158,187.5151,1576.2158,177.5151,1572.2158,181.5151"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="1353.3252" x2="1505.2964"
+			y1="142.7104" y2="142.7104" />
+		<polygon fill="#181818"
+			points="1495.2964,138.7104,1505.2964,142.7104,1495.2964,146.7104,1499.2964,142.7104"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="1565.5566" x2="1565.5566" y1="74"
+			y2="105.7104" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="1565.5566" x2="1282.5869"
+			y1="105.7104" y2="105.7104" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="1282.5869" x2="1282.5869"
+			y1="105.7104" y2="130.7104" />
+		<polygon fill="#181818"
+			points="1278.5869,120.7104,1282.5869,130.7104,1286.5869,120.7104,1282.5869,124.7104"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="1639.1353" x2="1855.1855"
+			y1="142.7104" y2="142.7104" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="1855.1855" x2="1855.1855"
+			y1="142.7104" y2="184.1128" />
+		<polygon fill="#181818"
+			points="1851.1855,174.1128,1855.1855,184.1128,1859.1855,174.1128,1855.1855,178.1128"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="2110.4727" x2="2110.4727"
+			y1="214.6792" y2="249.6792" />
+		<polygon fill="#181818"
+			points="2106.4727,239.6792,2110.4727,249.6792,2114.4727,239.6792,2110.4727,243.6792"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="290.8276" x2="290.8276" y1="74"
+			y2="105.7104" />
+		<polygon fill="#181818"
+			points="286.8276,95.7104,290.8276,105.7104,294.8276,95.7104,290.8276,99.7104"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="857.9077" x2="857.9077" y1="74"
+			y2="105.7104" />
+		<polygon fill="#181818"
+			points="853.9077,95.7104,857.9077,105.7104,861.9077,95.7104,857.9077,99.7104"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="412.4624" x2="732.2124" y1="62"
+			y2="62" />
+		<polygon fill="#181818" points="722.2124,58,732.2124,62,722.2124,66,726.2124,62"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="983.603" x2="1452.0134" y1="62"
+			y2="62" />
+		<polygon fill="#181818" points="1442.0134,58,1452.0134,62,1442.0134,66,1446.0134,62"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="1122.9961" x2="1122.9961" y1="30"
+			y2="35" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="1122.9961" x2="290.8276" y1="35"
+			y2="35" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="290.8276" x2="290.8276" y1="35"
+			y2="50" />
+		<polygon fill="#181818" points="286.8276,40,290.8276,50,294.8276,40,290.8276,44"
+			style="stroke:#181818;stroke-width:1.0;" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="1679.0999" x2="2110.4727" y1="62"
+			y2="62" />
+		<line style="stroke:#181818;stroke-width:1.0;" x1="2110.4727" x2="2110.4727" y1="62"
+			y2="180.7104" />
+		<polygon fill="#181818"
+			points="2106.4727,170.7104,2110.4727,180.7104,2114.4727,170.7104,2110.4727,174.7104"
+			style="stroke:#181818;stroke-width:1.0;" /><!--SRC=[rP1D3e8m44RNSehP0Gik867bYeGOVxZ0e5CbbXPdoiBRMuWn1gD44nTksgRvlZTz5OViWbf1L6cxEvMNbfRO46HP1c69bQRSEEAMoQzX3Ev81YB77SN1RDRtagGJIbghaGKMHGvAus4S19YF-12kXihJZ7I8YxEjFv0MWaYXtrvXoYc4sTSgw47lB4j68yfoyqFBnnbVMhv6J5bkrqNjgB2uVsl8dPor3txakEd4JHl-rpVUGKyOfWPh8_sZGVn56jpgG_aA]-->
+	</g>
+</svg>

@@ -78,7 +78,8 @@ Jonas Zeltner\inst{1}\and%
 % ================================================
 % Bibliography
 % ------------------------------------------------
-\usepackage{fvextra}
+\usepackage[outputdir=aux]{minted}
+% \usemintedstyle{bw}
 \usepackage{csquotes}
 \usepackage{perpage}
 \MakePerPage{footnote}
@@ -114,8 +115,9 @@ Jonas Zeltner\inst{1}\and%
 % Additional packages
 % ------------------------------------------------
 \usepackage{subcaption}
-\usepackage{svg}
+\usepackage[inkscapelatex=false]{svg}
 \usepackage{tikz}
+\usepackage{listings}
 
 
 
@@ -152,7 +154,7 @@ Jonas Zeltner\inst{1}\and%
 
 \input{sections/presentation.tex}
 
-\begin{frame}{References}
+\begin{frame}[allowframebreaks]{References}
 	% \begin{block}{References}
 	\printbibliography[heading=none]
 	% \end{block}

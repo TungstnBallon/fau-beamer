@@ -1,0 +1,270 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	contentStyleType="text/css" height="397px" preserveAspectRatio="none"
+	style="width:608px;height:397px;background:#FFFFFF;" version="1.1" viewBox="0 0 608 397"
+	width="608px" zoomAndPan="magnify">
+	<defs />
+	<g><!--cluster
+		polars-->
+		<g id="cluster_polars">
+			<path
+				d="M135.5,307 L185.623,307 A3.75,3.75 0 0 1 188.123,309.5 L195.123,329.2969 L382.5,329.2969 A2.5,2.5 0 0 1 385,331.7969 L385,387.5 A2.5,2.5 0 0 1 382.5,390 L135.5,390 A2.5,2.5 0 0 1 133,387.5 L133,309.5 A2.5,2.5 0 0 1 135.5,307 "
+				fill="none" style="stroke:#000000;stroke-width:1.5;" />
+			<line style="stroke:#000000;stroke-width:1.5;" x1="133" x2="195.123"
+				y1="329.2969" y2="329.2969" />
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				font-weight="bold" lengthAdjust="spacing" textLength="49.123"
+				x="137" y="321.9951">polars</text>
+		</g><!--class
+		DataFrame-->
+		<g id="elem_DataFrame">
+			<rect fill="#F1F1F1" height="32" id="DataFrame" rx="2.5" ry="2.5"
+				style="stroke:#181818;stroke-width:0.5;" width="110.0664" x="149"
+				y="342" />
+			<ellipse cx="164" cy="358" fill="#ADD1B2" rx="11" ry="11"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<path
+				d="M166.9688,363.6406 Q166.3906,363.9375 165.75,364.0781 Q165.1094,364.2344 164.4063,364.2344 Q161.9063,364.2344 160.5781,362.5938 Q159.2656,360.9375 159.2656,357.8125 Q159.2656,354.6875 160.5781,353.0313 Q161.9063,351.375 164.4063,351.375 Q165.1094,351.375 165.75,351.5313 Q166.4063,351.6875 166.9688,351.9844 L166.9688,354.7031 Q166.3438,354.125 165.75,353.8594 Q165.1563,353.5781 164.5313,353.5781 Q163.1875,353.5781 162.5,354.6563 Q161.8125,355.7188 161.8125,357.8125 Q161.8125,359.9063 162.5,360.9844 Q163.1875,362.0469 164.5313,362.0469 Q165.1563,362.0469 165.75,361.7813 Q166.3438,361.5 166.9688,360.9219 L166.9688,363.6406 Z "
+				fill="#000000" />
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" textLength="78.0664" x="178" y="362.8467">
+				DataFrame</text>
+		</g><!--class
+		Series-->
+		<g id="elem_Series">
+			<rect fill="#F1F1F1" height="32" id="Series" rx="2.5" ry="2.5"
+				style="stroke:#181818;stroke-width:0.5;" width="75.0527" x="294.5"
+				y="342" />
+			<ellipse cx="309.5" cy="358" fill="#ADD1B2" rx="11" ry="11"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<path
+				d="M312.4688,363.6406 Q311.8906,363.9375 311.25,364.0781 Q310.6094,364.2344 309.9063,364.2344 Q307.4063,364.2344 306.0781,362.5938 Q304.7656,360.9375 304.7656,357.8125 Q304.7656,354.6875 306.0781,353.0313 Q307.4063,351.375 309.9063,351.375 Q310.6094,351.375 311.25,351.5313 Q311.9063,351.6875 312.4688,351.9844 L312.4688,354.7031 Q311.8438,354.125 311.25,353.8594 Q310.6563,353.5781 310.0313,353.5781 Q308.6875,353.5781 308,354.6563 Q307.3125,355.7188 307.3125,357.8125 Q307.3125,359.9063 308,360.9844 Q308.6875,362.0469 310.0313,362.0469 Q310.6563,362.0469 311.25,361.7813 Q311.8438,361.5 312.4688,360.9219 L312.4688,363.6406 Z "
+				fill="#000000" />
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" textLength="43.0527" x="323.5" y="362.8467">
+				Series</text>
+		</g><!--class
+		IOTypeImplementation-->
+		<g id="elem_IOTypeImplementation">
+			<rect codeLine="2" fill="#F1F1F1" height="32" id="IOTypeImplementation"
+				rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;"
+				width="362.1729" x="7" y="10" />
+			<ellipse cx="22" cy="26" fill="#B4A7E5" rx="11" ry="11"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<path
+				d="M17.9219,21.7656 L17.9219,19.6094 L25.3125,19.6094 L25.3125,21.7656 L22.8438,21.7656 L22.8438,29.8438 L25.3125,29.8438 L25.3125,32 L17.9219,32 L17.9219,29.8438 L20.3906,29.8438 L20.3906,21.7656 L17.9219,21.7656 Z "
+				fill="#000000" />
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				font-style="italic" lengthAdjust="spacing" textLength="160.6514"
+				x="36" y="30.8467">IOTypeImplementation</text>
+			<rect fill="#FFFFFF" height="15.9688"
+				style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;"
+				width="167.5215" x="204.6514" y="7" />
+			<text fill="#000000" font-family="sans-serif" font-size="12"
+				font-style="italic" lengthAdjust="spacing" textLength="165.5215"
+				x="205.6514" y="19.1387">T extends IOType = IOType</text>
+		</g><!--class
+		Table-->
+		<g id="elem_Table">
+			<rect codeLine="5" fill="#F1F1F1" height="32" id="Table" rx="2.5" ry="2.5"
+				style="stroke:#181818;stroke-width:0.5;" width="70.5205" x="152.5"
+				y="119" />
+			<ellipse cx="167.5" cy="135" fill="#A9DCDF" rx="11" ry="11"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<path
+				d="M167.6094,130.3438 L166.4531,135.4219 L168.7813,135.4219 L167.6094,130.3438 Z M166.125,128.1094 L169.1094,128.1094 L172.4688,140.5 L170.0156,140.5 L169.25,137.4375 L165.9688,137.4375 L165.2188,140.5 L162.7813,140.5 L166.125,128.1094 Z "
+				fill="#000000" />
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				font-style="italic" lengthAdjust="spacing" textLength="38.5205"
+				x="181.5" y="139.8467">Table</text>
+		</g><!--class
+		TableColumn-->
+		<g id="elem_TableColumn">
+			<rect codeLine="9" fill="#F1F1F1" height="32" id="TableColumn" rx="2.5"
+				ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="135.4648"
+				x="450.5" y="119" />
+			<ellipse cx="465.5" cy="135" fill="#A9DCDF" rx="11" ry="11"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<path
+				d="M465.6094,130.3438 L464.4531,135.4219 L466.7813,135.4219 L465.6094,130.3438 Z M464.125,128.1094 L467.1094,128.1094 L470.4688,140.5 L468.0156,140.5 L467.25,137.4375 L463.9688,137.4375 L463.2188,140.5 L460.7813,140.5 L464.125,128.1094 Z "
+				fill="#000000" />
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				font-style="italic" lengthAdjust="spacing" textLength="92.1348"
+				x="479.5" y="139.8467">TableColumn</text>
+			<rect fill="#FFFFFF" height="15.9688"
+				style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;"
+				width="9.3301" x="579.6348" y="116" />
+			<text fill="#000000" font-family="sans-serif" font-size="12"
+				font-style="italic" lengthAdjust="spacing" textLength="7.3301"
+				x="580.6348" y="128.1387">T</text>
+		</g><!--class
+		PolarsTable-->
+		<g id="elem_PolarsTable">
+			<rect codeLine="11" fill="#F1F1F1" height="32" id="PolarsTable" rx="2.5"
+				ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="113.0469"
+				x="63.5" y="212" />
+			<ellipse cx="78.5" cy="228" fill="#ADD1B2" rx="11" ry="11"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<path
+				d="M81.4688,233.6406 Q80.8906,233.9375 80.25,234.0781 Q79.6094,234.2344 78.9063,234.2344 Q76.4063,234.2344 75.0781,232.5938 Q73.7656,230.9375 73.7656,227.8125 Q73.7656,224.6875 75.0781,223.0313 Q76.4063,221.375 78.9063,221.375 Q79.6094,221.375 80.25,221.5313 Q80.9063,221.6875 81.4688,221.9844 L81.4688,224.7031 Q80.8438,224.125 80.25,223.8594 Q79.6563,223.5781 79.0313,223.5781 Q77.6875,223.5781 77,224.6563 Q76.3125,225.7188 76.3125,227.8125 Q76.3125,229.9063 77,230.9844 Q77.6875,232.0469 79.0313,232.0469 Q79.6563,232.0469 80.25,231.7813 Q80.8438,231.5 81.4688,230.9219 L81.4688,233.6406 Z "
+				fill="#000000" />
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" textLength="81.0469" x="92.5" y="232.8467">
+				PolarsTable</text>
+		</g><!--class
+		TsTable-->
+		<g id="elem_TsTable">
+			<rect codeLine="16" fill="#F1F1F1" height="32" id="TsTable" rx="2.5"
+				ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="86.3662"
+				x="212" y="212" />
+			<ellipse cx="227" cy="228" fill="#ADD1B2" rx="11" ry="11"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<path
+				d="M229.9688,233.6406 Q229.3906,233.9375 228.75,234.0781 Q228.1094,234.2344 227.4063,234.2344 Q224.9063,234.2344 223.5781,232.5938 Q222.2656,230.9375 222.2656,227.8125 Q222.2656,224.6875 223.5781,223.0313 Q224.9063,221.375 227.4063,221.375 Q228.1094,221.375 228.75,221.5313 Q229.4063,221.6875 229.9688,221.9844 L229.9688,224.7031 Q229.3438,224.125 228.75,223.8594 Q228.1563,223.5781 227.5313,223.5781 Q226.1875,223.5781 225.5,224.6563 Q224.8125,225.7188 224.8125,227.8125 Q224.8125,229.9063 225.5,230.9844 Q226.1875,232.0469 227.5313,232.0469 Q228.1563,232.0469 228.75,231.7813 Q229.3438,231.5 229.9688,230.9219 L229.9688,233.6406 Z "
+				fill="#000000" />
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" textLength="54.3662" x="241" y="232.8467">
+				TsTable</text>
+		</g><!--class
+		PolarsTableColumn-->
+		<g id="elem_PolarsTableColumn">
+			<rect codeLine="21" fill="#F1F1F1" height="32" id="PolarsTableColumn"
+				rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;"
+				width="177.9912" x="333" y="212" />
+			<ellipse cx="348" cy="228" fill="#ADD1B2" rx="11" ry="11"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<path
+				d="M350.9688,233.6406 Q350.3906,233.9375 349.75,234.0781 Q349.1094,234.2344 348.4063,234.2344 Q345.9063,234.2344 344.5781,232.5938 Q343.2656,230.9375 343.2656,227.8125 Q343.2656,224.6875 344.5781,223.0313 Q345.9063,221.375 348.4063,221.375 Q349.1094,221.375 349.75,221.5313 Q350.4063,221.6875 350.9688,221.9844 L350.9688,224.7031 Q350.3438,224.125 349.75,223.8594 Q349.1563,223.5781 348.5313,223.5781 Q347.1875,223.5781 346.5,224.6563 Q345.8125,225.7188 345.8125,227.8125 Q345.8125,229.9063 346.5,230.9844 Q347.1875,232.0469 348.5313,232.0469 Q349.1563,232.0469 349.75,231.7813 Q350.3438,231.5 350.9688,230.9219 L350.9688,233.6406 Z "
+				fill="#000000" />
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" textLength="134.6611" x="362" y="232.8467">
+				PolarsTableColumn</text>
+			<rect fill="#FFFFFF" height="15.9688"
+				style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;"
+				width="9.3301" x="504.6611" y="209" />
+			<text fill="#000000" font-family="sans-serif" font-size="12"
+				font-style="italic" lengthAdjust="spacing" textLength="7.3301"
+				x="505.6611" y="221.1387">T</text>
+		</g><!--class
+		TsTableColumn-->
+		<g id="elem_TsTableColumn">
+			<rect codeLine="26" fill="#F1F1F1" height="32" id="TsTableColumn" rx="2.5"
+				ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="151.3105"
+				x="446.5" y="342" />
+			<ellipse cx="461.5" cy="358" fill="#ADD1B2" rx="11" ry="11"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<path
+				d="M464.4688,363.6406 Q463.8906,363.9375 463.25,364.0781 Q462.6094,364.2344 461.9063,364.2344 Q459.4063,364.2344 458.0781,362.5938 Q456.7656,360.9375 456.7656,357.8125 Q456.7656,354.6875 458.0781,353.0313 Q459.4063,351.375 461.9063,351.375 Q462.6094,351.375 463.25,351.5313 Q463.9063,351.6875 464.4688,351.9844 L464.4688,354.7031 Q463.8438,354.125 463.25,353.8594 Q462.6563,353.5781 462.0313,353.5781 Q460.6875,353.5781 460,354.6563 Q459.3125,355.7188 459.3125,357.8125 Q459.3125,359.9063 460,360.9844 Q460.6875,362.0469 462.0313,362.0469 Q462.6563,362.0469 463.25,361.7813 Q463.8438,361.5 464.4688,360.9219 L464.4688,363.6406 Z "
+				fill="#000000" />
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" textLength="107.9805" x="475.5" y="362.8467">
+				TsTableColumn</text>
+			<rect fill="#FFFFFF" height="15.9688"
+				style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;"
+				width="9.3301" x="591.4805" y="339" />
+			<text fill="#000000" font-family="sans-serif" font-size="12"
+				font-style="italic" lengthAdjust="spacing" textLength="7.3301"
+				x="592.4805" y="351.1387">T</text>
+		</g><!--reverse
+		link IOTypeImplementation to Table-->
+		<g id="link_IOTypeImplementation_Table">
+			<path codeLine="8" d="M188,60.33 C188,80.67 188,98.37 188,118.7 "
+				fill="none" id="IOTypeImplementation-backto-Table"
+				style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;" />
+			<polygon fill="none" points="188,42.33,182,60.33,194,60.33,188,42.33"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<text fill="#000000" font-family="sans-serif" font-size="13"
+				lengthAdjust="spacing" textLength="262.2534" x="189" y="85.0669">
+				IOTypeImplementation&lt;IOType.TABLE&gt;</text>
+		</g><!--reverse
+		link Table to PolarsTable-->
+		<g id="link_Table_PolarsTable">
+			<path d="M165.9946,165.4485 C153.3946,182.3085 143.85,195.08 131.25,211.95 "
+				fill="none" id="Table-backto-PolarsTable"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<polygon fill="none"
+				points="176.77,151.03,161.1885,161.8567,170.8008,169.0402,176.77,151.03"
+				style="stroke:#181818;stroke-width:1.0;" />
+		</g><!--reverse
+		link Table to TsTable-->
+		<g id="link_Table_TsTable">
+			<path d="M209.7358,165.5223 C222.1558,182.3823 231.5,195.08 243.92,211.95 "
+				fill="none" id="Table-backto-TsTable"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<polygon fill="none"
+				points="199.06,151.03,204.9051,169.0809,214.5666,161.9637,199.06,151.03"
+				style="stroke:#181818;stroke-width:1.0;" />
+		</g><!--reverse
+		link TableColumn to PolarsTableColumn-->
+		<g id="link_TableColumn_PolarsTableColumn">
+			<path d="M489.0852,163.4118 C471.2952,180.2718 455.67,195.08 437.88,211.95 "
+				fill="none" id="TableColumn-backto-PolarsTableColumn"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<polygon fill="none"
+				points="502.15,151.03,484.9579,159.0569,493.2125,167.7668,502.15,151.03"
+				style="stroke:#181818;stroke-width:1.0;" />
+		</g><!--reverse
+		link TableColumn to TsTableColumn-->
+		<g id="link_TableColumn_TsTableColumn">
+			<path
+				d="M523.9826,168.7918 C526.7026,184.0818 527.47,190.72 529,212 C532.4,259.26 527.03,315.31 523.94,341.75 "
+				fill="none" id="TableColumn-backto-TsTableColumn"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<polygon fill="none"
+				points="520.83,151.07,518.0753,169.8426,529.8899,167.7409,520.83,151.07"
+				style="stroke:#181818;stroke-width:1.0;" />
+		</g><!--reverse
+		link TsTable to TsTableColumn-->
+		<g id="link_TsTable_TsTableColumn">
+			<path codeLine="31"
+				d="M292.3699,249.9677 C315.6799,262.9177 339.97,275.96 371,291 C409.49,309.66 454.52,329.03 485.33,341.92 "
+				fill="none" id="TsTable-backto-TsTableColumn"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<polygon fill="#181818"
+				points="281.88,244.14,285.1824,250.5505,292.3699,249.9677,289.0675,243.5572,281.88,244.14"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<text fill="#000000" font-family="sans-serif" font-size="13"
+				lengthAdjust="spacing" textLength="8.271" x="281.4432" y="264.0596">
+				1</text>
+			<text fill="#000000" font-family="sans-serif" font-size="13"
+				lengthAdjust="spacing" textLength="36.5625" x="430.5805"
+				y="330.9041">many</text>
+		</g><!--reverse
+		link PolarsTable to DataFrame-->
+		<g id="link_PolarsTable_DataFrame">
+			<path codeLine="32"
+				d="M136.5529,254.2232 C152.7129,278.8532 177.89,317.21 194.05,341.83 "
+				fill="none" id="PolarsTable-backto-DataFrame"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<polygon fill="#181818"
+				points="129.97,244.19,129.917,251.4009,136.5529,254.2232,136.6059,247.0123,129.97,244.19"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<text fill="#000000" font-family="sans-serif" font-size="13"
+				lengthAdjust="spacing" textLength="12.8286" x="161" y="287.0669">df</text>
+			<text fill="#000000" font-family="sans-serif" font-size="13"
+				lengthAdjust="spacing" textLength="8.271" x="123.9847" y="264.1262">
+				1</text>
+			<text fill="#000000" font-family="sans-serif" font-size="13"
+				lengthAdjust="spacing" textLength="8.271" x="181.4629" y="331.0782">
+				1</text>
+		</g><!--reverse
+		link PolarsTableColumn to Series-->
+		<g id="link_PolarsTableColumn_Series">
+			<path codeLine="33"
+				d="M404.4173,254.006 C387.0973,278.636 359.98,317.21 342.66,341.83 "
+				fill="none" id="PolarsTableColumn-backto-Series"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<polygon fill="#181818"
+				points="411.32,244.19,404.5967,246.7971,404.4173,254.006,411.1407,251.3989,411.32,244.19"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<text fill="#000000" font-family="sans-serif" font-size="13"
+				lengthAdjust="spacing" textLength="38.4985" x="391" y="287.0669">
+				series</text>
+			<text fill="#000000" font-family="sans-serif" font-size="13"
+				lengthAdjust="spacing" textLength="8.271" x="398.5036" y="264.1262">
+				1</text>
+			<text fill="#000000" font-family="sans-serif" font-size="13"
+				lengthAdjust="spacing" textLength="8.271" x="336.9023" y="331.0782">
+				1</text>
+		</g><!--SRC=[ZP9VJuCm5CMVsQUuuMdg8F6rcIJ-JPPeN3BYYp6aWukIG4lQRhgetzr2smqsfhu0xRdtdjDVUIioX0gh9Gevyho2AHGvJH5cZ_6cnbbLbrWXKrGLd4rZm0-5B9DMXWlx4S6dxlQyiu8tIm9ni_pM3xgKIj1KGLfIAI6conBtYysCCBwykhzrVKF-CFqAGpk232ViZegEs5_pSbNfmzZGZPjHvxoaGfhvxg3Tm1rzdEKJMDDoXOtVNF2r1YbEsh8WomdKRMruGnMz4xH2ennq47ZQt-fdYd_9OxLnahOdaXDWg-Oc4vudWhzB6yV911veFTKy2lOwSOCDZCXKzjk97NSKqWvaBvtPFcHcziU9H56W3fjiQRYWHjd2MxHBgssBEyYqzI2j_mGB4gQlXO3XyRU9KtMy-Fd5sRhhySzzE0q2y2lADdu_nwX7OLUgt_j_2O4i7mr06sfQM5W6sWy0]-->
+	</g>
+</svg>

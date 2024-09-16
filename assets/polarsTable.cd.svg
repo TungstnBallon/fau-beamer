@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	contentStyleType="text/css" height="378px" preserveAspectRatio="none"
+	style="width:547px;height:378px;background:#FFFFFF;" version="1.1" viewBox="0 0 547 378"
+	width="547px" zoomAndPan="magnify">
+	<defs />
+	<g><!--class
+		PolarsTable-->
+		<g id="elem_PolarsTable">
+			<rect codeLine="1" fill="#F1F1F1" height="357.6406" id="PolarsTable"
+				rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;"
+				width="526.124" x="7" y="7" />
+			<ellipse cx="225.2886" cy="23" fill="#ADD1B2" rx="11" ry="11"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<path
+				d="M228.2573,28.6406 Q227.6792,28.9375 227.0386,29.0781 Q226.3979,29.2344 225.6948,29.2344 Q223.1948,29.2344 221.8667,27.5938 Q220.5542,25.9375 220.5542,22.8125 Q220.5542,19.6875 221.8667,18.0313 Q223.1948,16.375 225.6948,16.375 Q226.3979,16.375 227.0386,16.5313 Q227.6948,16.6875 228.2573,16.9844 L228.2573,19.7031 Q227.6323,19.125 227.0386,18.8594 Q226.4448,18.5781 225.8198,18.5781 Q224.4761,18.5781 223.7886,19.6563 Q223.1011,20.7188 223.1011,22.8125 Q223.1011,24.9063 223.7886,25.9844 Q224.4761,27.0469 225.8198,27.0469 Q226.4448,27.0469 227.0386,26.7813 Q227.6323,26.5 228.2573,25.9219 L228.2573,28.6406 Z "
+				fill="#000000" />
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" textLength="81.0469" x="245.7886" y="27.8467">
+				PolarsTable</text>
+			<line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="532.124" y1="39"
+				y2="39" />
+			<rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;"
+				width="6" x="15" y="49.6484" />
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" textLength="148.4697" x="27" y="55.9951">df:
+				polars.DataFrame</text>
+			<rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;"
+				width="6" x="15" y="65.9453" />
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" textLength="272.002" x="27" y="72.292">valueTypeProvider:
+				ValueTypeProvider</text>
+			<line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="532.124"
+				y1="79.5938" y2="79.5938" />
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" textLength="245.458" x="13" y="96.5889">PolarsTable(df,
+				valueTypeProvider)</text>
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" textLength="185.0693" x="13" y="112.8857">&#171;getter&#187;
+				nRows(): number</text>
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" textLength="208.9404" x="13" y="129.1826">&#171;getter&#187;
+				nColumns(): number</text>
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" textLength="354.833" x="13" y="145.4795">&#171;getter&#187;
+				columns(): readonly PolarsTableColumn[]</text>
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" textLength="169.5039" x="13" y="161.7764">getTypes():
+				ValueType[]</text>
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" textLength="410.4707" x="13" y="178.0732">generateInsertValuesStatement(tableName:
+				string): string</text>
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" textLength="408.8369" x="13" y="194.3701">generateCreateTableStatement(tableName:
+				string): string</text>
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" textLength="379.8184" x="13" y="210.667">withColumn(column:
+				PolarsTableColumn): PolarsTable</text>
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" textLength="304.3564" x="13" y="226.9639">withColumn(expr:
+				polars.Expr): PolarsTable</text>
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" textLength="404.4688" x="13" y="243.2607">getColumn(name:
+				string): PolarsTableColumn | undefined</text>
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" textLength="138.7764" x="13" y="259.5576">clone():
+				PolarsTable</text>
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" textLength="331.4473" x="13" y="275.8545">acceptVisitor&lt;R&gt;(visitor:
+				IoTypeVisitor&lt;R&gt;): R</text>
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" textLength="200.4775" x="13" y="292.1514">isPolars():
+				this is PolarsTable</text>
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" textLength="204.6201" x="13" y="308.4482">isTypescript():
+				this is TsTable</text>
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" textLength="116.1152" x="13" y="324.7451">toString():
+				string</text>
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" textLength="300.8223" x="13" y="341.042">writeIpc(options?:
+				WriteIPCOptions): Buffer</text>
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" textLength="514.124" x="13" y="357.3389">writeIpcTo(destination:
+				string | Writable, options?: WriteIPCOptions): void</text>
+		</g><!--SRC=[ZPBBJiCm44NNy1LUEbBX0wAgI1IGke6gZSe2iN2TIJkIOqVs9AK2_XtRwIDjgegid9bpxpnigOHpR6gKi2uJImNi-_R6VtTvaR8gXk-V18aNAqfeCurGDMJR2gRMD9Y3JTdYF1J9ZYlFYm7h2PE83OSh808x6Z4zCnl7avJfkbpkNBhfiL5rgQyGyWXO4BdHQjiThjL_V4QP5uLc8dmOu93JO0N1H3km5BDkJZvGWYPEmUlLBoHbZYpgLR8_d8Z7lWM2MFZVsWtIkksIjxEa_VwJazYv3BugUxYwP_zp0VUZxsXzsacl5ljXjSwXG0rvb4fbDF0Bda9Ag6Y13idOuMp4c_QOiea9cprcl7WM9UXQas17QtGCNSyMNRmaQR6YBfTr63BpE00_swL5VuELvAOYDDezfEmzXgRZjpRY-SUwA7RlQCzdXkVW2BK8qDxIRoAeGz41k-RO68oh-lq3]-->
+	</g>
+</svg>

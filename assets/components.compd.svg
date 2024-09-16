@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	contentStyleType="text/css" height="337px" preserveAspectRatio="none"
+	style="width:312px;height:337px;background:#FFFFFF;" version="1.1" viewBox="0 0 312 337"
+	width="312px" zoomAndPan="magnify">
+	<defs />
+	<g><!--cluster
+		TypeScript-->
+		<g id="cluster_TypeScript">
+			<rect fill="none" height="97" rx="2.5" ry="2.5"
+				style="stroke:#181818;stroke-width:1.0;" width="198" x="47" y="7" />
+			<path d="M141.9912,7 L141.9912,16.2969 L131.9912,26.2969 L47,26.2969 "
+				fill="none" style="stroke:#181818;stroke-width:1.0;" />
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				font-weight="bold" lengthAdjust="spacing" textLength="84.9912"
+				x="50" y="20.9951">TypeScript</text>
+		</g><!--cluster
+		Rust-->
+		<g id="cluster_Rust">
+			<rect fill="none" height="203" rx="2.5" ry="2.5"
+				style="stroke:#181818;stroke-width:1.0;" width="299" x="7" y="128" />
+			<path d="M52.7725,128 L52.7725,137.2969 L42.7725,147.2969 L7,147.2969 "
+				fill="none" style="stroke:#181818;stroke-width:1.0;" />
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				font-weight="bold" lengthAdjust="spacing" textLength="35.7725"
+				x="10" y="141.9951">Rust</text>
+		</g><!--entity
+		jv-->
+		<g id="elem_jv">
+			<rect fill="#F1F1F1" height="46.2969" rx="2.5" ry="2.5"
+				style="stroke:#181818;stroke-width:0.5;" width="166.6904" x="62.5"
+				y="42" />
+			<rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;"
+				width="15" x="209.1904" y="47" />
+			<rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;"
+				width="4" x="207.1904" y="49" />
+			<rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;"
+				width="4" x="207.1904" y="53" />
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" textLength="126.6904" x="77.5" y="74.9951">Jayvee
+				interpreter</text>
+		</g><!--entity
+		lib-->
+		<g id="elem_lib">
+			<rect fill="#F1F1F1" height="46.2969" rx="2.5" ry="2.5"
+				style="stroke:#181818;stroke-width:0.5;" width="149.1221" x="141.5"
+				y="163" />
+			<rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;"
+				width="15" x="270.6221" y="168" />
+			<rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;"
+				width="4" x="268.6221" y="170" />
+			<rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;"
+				width="4" x="268.6221" y="174" />
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" textLength="109.1221" x="156.5" y="195.9951">
+				sqlite-loader-lib</text>
+		</g><!--entity
+		pl-->
+		<g id="elem_pl">
+			<rect fill="#F1F1F1" height="46.2969" rx="2.5" ry="2.5"
+				style="stroke:#181818;stroke-width:0.5;" width="82.9707" x="23.5"
+				y="163" />
+			<rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;"
+				width="15" x="86.4707" y="168" />
+			<rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;"
+				width="4" x="84.4707" y="170" />
+			<rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;"
+				width="4" x="84.4707" y="174" />
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" textLength="42.9707" x="38.5" y="195.9951">
+				polars</text>
+		</g><!--entity
+		arrow-->
+		<g id="elem_arrow">
+			<rect fill="#F1F1F1" height="46.2969" rx="2.5" ry="2.5"
+				style="stroke:#181818;stroke-width:0.5;" width="80.1064" x="100"
+				y="269" />
+			<rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;"
+				width="15" x="160.1064" y="274" />
+			<rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;"
+				width="4" x="158.1064" y="276" />
+			<rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;"
+				width="4" x="158.1064" y="280" />
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" textLength="40.1064" x="115" y="301.9951">
+				arrow</text>
+		</g><!--link
+		jv to lib-->
+		<g id="link_jv_lib">
+			<path d="M159,88.1 C171.5,109.34 190.28,141.28 202.83,162.61 " fill="none"
+				id="jv-lib" style="stroke:#181818;stroke-width:1.0;" />
+		</g><!--link
+		lib to arrow-->
+		<g id="link_lib_arrow">
+			<path d="M199.88,209.06 C186.98,226.7 168.99,251.34 156.09,268.98 "
+				fill="none" id="lib-arrow" style="stroke:#181818;stroke-width:1.0;" />
+		</g><!--link
+		jv to pl-->
+		<g id="link_jv_pl">
+			<path d="M130.95,88.1 C116.5,109.34 94.76,141.28 80.24,162.61 " fill="none"
+				id="jv-pl" style="stroke:#181818;stroke-width:1.0;" />
+		</g><!--link
+		pl to arrow-->
+		<g id="link_pl_arrow">
+			<path d="M80.91,209.06 C93.63,226.7 111.4,251.34 124.12,268.98 " fill="none"
+				id="pl-arrow" style="stroke:#181818;stroke-width:1.0;" />
+		</g><!--SRC=[JKr13e9033p3Anhk-n6Fwermg5gI9OMjtNKD8VxTjH2mXvbsfjFsYYD1Svs5BdVraXfOwgfKUy8v4u6V4gae5Um08mpPx8zXlwRFhtZaufDz8iS17wIE_SrYXSskMWcC6aqKtZHK3M-JhFlxC6HmRayN_et7qcflTuHtymi0]-->
+	</g>
+</svg>
