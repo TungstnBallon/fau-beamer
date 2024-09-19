@@ -1,0 +1,27 @@
+\section{Conclusion}
+\begin{frame}[t]{Conclusion}
+	\begin{itemize}
+		\item Created a new table implementation for the \emph{Jayvee} interpreter
+		      \begin{itemize}
+			      \item Built on \emph{Polars}
+			      \item Used the strategy pattern
+			      \item Choose implementation at runtime
+			      \item Faster than the old implementation
+		      \end{itemize}
+		\item Created the external library \Verb|sqlite-loader-lib|
+		      \begin{itemize}
+			      \item Increases processing speed
+			      \item First-class \emph{Polars} support for databases may be more performant
+		      \end{itemize}
+		\item Increased the maximum file size of the \emph{Jayvee} interpreter
+		\item Future work
+		      \begin{itemize}
+			      \item Compatibility issues
+			            \begin{itemize}
+				            \item Unsupported \emph{Jayvee} operators
+				            \item \Verb|NULL| values
+				            \item Differing floating point values
+			            \end{itemize}
+		      \end{itemize}
+	\end{itemize}
+\end{frame}

@@ -362,7 +362,44 @@
 					\end{axis}
 				\end{tikzpicture}
 			\end{figure}
-
 		\end{column}
 	\end{columns}
 \end{frame}
+\begin{frame}[t]{Evaluation}{Differences in resulting tables}
+	\begin{itemize}
+		\item Differing floating point values
+		      \begin{itemize}
+			      \item Transforms that work with floating point values produce differing outputs
+			      \item Seemingly random
+			      \item About every 1074 rows
+			      \item $\num{8.53e-9}$ average difference
+			      \item Probably caused by an implementation difference between \emph{TypeScript} and \emph{Polars}
+		      \end{itemize}
+		\item Rows including \Verb|NULL|
+		      \begin{itemize}
+			      \item Original implementation: Replace with empty string or discard row
+			      \item New implementation: Has rows with \Verb|NULL|
+		      \end{itemize}
+	\end{itemize}
+
+\end{frame}
+
+\begin{frame}[t]{Evaluation}{Functional requirements}
+	\begin{description}
+		\item[interoperability] This allows the data to be used by multiple different applications without complex conversion \uncover<2->{({\color{green} \checkmark})}
+		\item[columnar] A columnar format has advantages described previously, including faster read times and less memory usage \uncover<3->{({\color{green} \checkmark})}
+		\item[feature toggle] We must be able to (de)activate the new features at runtime \uncover<4->{({\color{green} \checkmark})}
+		\item[compatibility] The \Verb|.sqlite| files produced by the different implementations must be identical \uncover<5->{({\color{red} \xmark})}
+		\item[modularization] Should it be necessary to write code in a language other than \emph{TypeScript}, this code must be placed in an external library usable from \emph{TypeScript} \uncover<6->{({\color{green} \checkmark})}
+		\item[extensibility] The functionality of the chosen data representation must be extensible \uncover<7->{({\color{green} \checkmark})}
+	\end{description}
+\end{frame}
+
+\begin{frame}[t]{Evaluation}{Non-functional Requirements}
+	\begin{description}
+		\item[performance] Either a decrease in the execution time for \emph{Jayvee} models, or an extension of the \emph{Jayvee} interpreter's capabilities \uncover<2->{({\color{green} \checkmark})}
+		\item[code style] The source code adheres to the project's code style \uncover<3->{({\color{green} \checkmark})}
+		\item[maturity] We aim to create a prototype, not a mature implementation \uncover<4->{({\color{green} \checkmark})}
+	\end{description}
+\end{frame}
+
