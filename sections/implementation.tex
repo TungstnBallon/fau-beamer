@@ -69,9 +69,9 @@
 	\begin{itemize}
 		\item There are three categories of \emph{Jayvee} expressions\footnotemark[1]:
 		      \begin{description}
-			      \item[Literal] Wrap the literal in \Verb|pl.lit(...)|
+			      \item[Literal] Wrap the literal in \Verb|pl.lit(...)| (\Verb|6 -> pl.lit(6)|)
 			      \item[Variable] Look up the value in the evaluation context
-			      \item[Operator] Use the interface method \Verb|PolarsOperator.polarsEvaluate(...)|
+			      \item[Operator] Use an equivalent \emph{Polars} expression (\Verb|'+' -> pl.add(...)|)
 		      \end{description}
 		\item<2-> \emph{Jayvee} expressions without equivalent \emph{Polars} expressions
 		      \begin{description}
@@ -109,7 +109,7 @@
 		\end{figure}
 	}
 \end{frame}
-\begin{frame}[t]{Implementation}{\Verb|sqlite-loader-lib|}
+\begin{frame}<presentation:0>[noframenumbering,t]{Implementation}{\Verb|sqlite-loader-lib|}
 	\begin{figure}
 		\includesvg[height=\FrameHeight]{assets/load_sqlite.ad.svg}
 	\end{figure}

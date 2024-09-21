@@ -231,7 +231,7 @@ const newDataFrame = dataFrame.withColumn(renamed)
 		\item \Verb|PolarsSQLiteLoaderExecutor| uses \Verb|PolarsTable| methods to generate SQL statements
 		\item \emph{Polars} can export a \Verb|DataFrame| to the \emph{Arrow} IPC format
 		\item The new external library \Verb|sqlite-loader-lib| is created to read this format and handle database export
-		\item It is written in \emph{Rust} and uses \emph{NAPI-RS} to offer a \emph{TypeScript} API\footnotemark[1]
+		\item \emph{Polars} is written in \emph{Rust} and uses \emph{NAPI-RS} to offer a \emph{TypeScript} API\footnotemark[1]
 		\item This is the same technology that \emph{Polars} uses\footnotemark[2]
 		      \begin{figure}
 			      \includesvg[height=0.5\FrameHeight]{assets/components.compd.svg}
