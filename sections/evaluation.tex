@@ -386,8 +386,8 @@
 
 \begin{frame}[t]{Evaluation}{Functional requirements}
 	\begin{description}
-		\item[interoperability] This allows the data to be used by multiple different applications without complex conversion \uncover<2->{({\color{green} \checkmark})}
-		\item[columnar] A columnar format has advantages described previously, including faster read times and less memory usage \uncover<3->{({\color{green} \checkmark})}
+		\item[columnar] A columnar format has advantages described previously, including faster read times and less memory usage \uncover<2->{({\color{green} \checkmark})}
+		\item[interoperability] This allows the data to be used by multiple different applications without complex conversion \uncover<3->{({\color{green} \checkmark})}
 		\item[feature toggle] We must be able to (de)activate the new features at runtime \uncover<4->{({\color{green} \checkmark})}
 		\item[compatibility] The \Verb|.sqlite| files produced by the different implementations must be identical \uncover<5->{({\color{red} \xmark})}
 		\item[modularization] Should it be necessary to write code in a language other than \emph{TypeScript}, this code must be placed in an external library usable from \emph{TypeScript} \uncover<6->{({\color{green} \checkmark})}

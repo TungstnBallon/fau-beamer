@@ -1,21 +1,4 @@
 \section{Implementation}
-\begin{frame}[t,fragile]{Implementation}{PolarsTable} % FIXME this whole slide
-	\begin{itemize}
-		\item \Verb|PolarsTable.clone()| does not clone the attribute \Verb|PolarsTable.valueTypeProvider|, because it should be treated as a singleton
-		\item \Verb|PolarsTable.withColumn(...)| distinguishes between a column and a \emph{Polars} expression, by checking whether the object has the property \Verb|series|:
-		      \begin{center}
-			      % \small
-			      \begin{minted}{typescript}
-	withColumn(column: PolarsTableColumn | pl.Expr): PolarsTable {
-		const tmp = 'series' in column ? column.series : column;
-		const ndf = this.df.withColumn(tmp);
-		return new PolarsTable(ndf, this.valueTypeProvider);
-	}
-\end{minted}
-		      \end{center}
-	\end{itemize}
-\end{frame}
-
 \begin{frame}[t]{Implementation}{Selecting the correct block executor}
 	\centering
 	\includesvg[height=0.5\FrameHeight]{assets/main_dia.ad.svg}
@@ -24,7 +7,7 @@
 	\includesvg[width=\textwidth]{assets/choose_block_executor.ad.svg}
 \end{frame}
 
-\begin{frame}[t]{Implementation}{((Local)FileTo)TableInterpreter}
+\begin{frame}<presentation:0>[t,noframenumbering]{Implementation}{((Local)FileTo)TableInterpreter}
 	\begin{itemize}[<+(1)->]
 		\item \Verb|TableInterpreter|:
 		      \begin{enumerate}
@@ -46,6 +29,26 @@
 	\end{itemize}
 \end{frame}
 
+\begin{frame}[t,fragile]{Implementation}{Table transforms}
+	\begin{itemize}
+		\item Previously: Evaluate the transform's expression for each row in the table
+		\item<2-> Still possible, but \emph{Polars} offers its own approach
+		      \begin{block}{\emph{Polars expression}}
+			      Describes a series of operations, that result in one or more columns, with automatic optimization and parallelization\footnotemark[1].
+			      \small
+			      \begin{lstlisting}[caption=Mutiply column "a" and "b"]
+	use { pl } from 'nodejs-polars';
+	const expression = pl.col('a').mul(pl.col('b')).alias('c');
+	const newDataFrame = oldDataFrame.withColumn(expression);
+	\end{lstlisting}
+		      \end{block}
+		\item<3-> The new approach is to convert the transform's \emph{Jayvee} expression into a \emph{Polars} expression
+	\end{itemize}
+
+
+	\footnotetext[1]{\textcite{polars:docs:expr}}
+\end{frame}
+
 \begin{frame}[t]{Implementation}{TableTransformer}
 	\begin{columns}[T]
 		\begin{column}{0.5\linewidth}
@@ -60,7 +63,7 @@
 			\end{enumerate}
 		\end{column}
 		\begin{column}{0.5\linewidth}
-			\includesvg{assets/transform_exec.sd.svg}
+			\includesvg[width=\linewidth]{assets/transform_exec.sd.svg}
 		\end{column}
 	\end{columns}
 
@@ -89,19 +92,20 @@
 \end{frame}
 \begin{frame}[fragile]{Implementation}{Example table transform}
 	\begin{onlyenv}<1>
-		\begin{minted}{typescript}
+		\begin{lstlisting}
 		transform tr {
 			from x oftype integer;
 			from y oftype integer;
 			to z oftype decimal;
 			z: x + y;
 		}
+
 		block B oftype TableTransformer {
 			inputColumns: ['a', 'b'];
 			outputColumn: 'c';
 			uses: tr;
 		}
-		\end{minted}
+		\end{lstlisting}
 	\end{onlyenv}
 	\only<2> {
 		\begin{figure}

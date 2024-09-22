@@ -73,8 +73,8 @@ Professorship for Open Source Software
 % ================================================
 % Bibliography
 % ------------------------------------------------
-\usepackage[outputdir=aux]{minted}
-% \usemintedstyle{bw}
+\usepackage{fancyvrb}
+\usepackage{listings}
 \usepackage{csquotes}
 \usepackage{perpage}
 \MakePerPage{footnote}
@@ -155,7 +155,7 @@ Professorship for Open Source Software
 
 \input{sections/presentation.tex}
 
-\begin{frame}[allowframebreaks]{References}
+\begin{frame}[t,allowframebreaks]{References}
 	% \begin{block}{References}
 	\printbibliography[heading=none]
 	% \end{block}

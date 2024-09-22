@@ -1,19 +1,19 @@
 \section{Requirements}
 \begin{frame}[t]{Requirements}{Functional Requirements}
 	\begin{description}[<+(1)->]
-		\item[interoperability] This allows the data to be used by multiple different applications without complex conversion. % FIXME not applications
-		\item[columnar] A columnar format has advantages described previously, including faster read times and less memory usage.
-		\item[feature toggle] We must be able to (de)activate the new features at runtime.
-		\item[compatibility] The \Verb|.sqlite| files produced by the different implementations must be identical.
-		\item[modularization] Should it be necessary to write code in a language other than \emph{TypeScript}, this code must be placed in an external library usable from \emph{TypeScript}.
-		\item[extensibility] The functionality of the chosen data representation must be extensible.
+		\item[columnar] A columnar format has advantages described previously, including faster read times and less memory usage
+		\item[interoperability] This allows the data to be used by multiple modules without complex conversion
+		\item[feature toggle] We must be able to (de)activate the new features at runtime
+		\item[compatibility] The \Verb|.sqlite| files produced by the different implementations must be identical
+		\item[modularization] Should it be necessary to write code in a language other than \emph{TypeScript}, this code must be placed in an external library usable from \emph{TypeScript}
+		\item[extensibility] The functionality of the chosen data representation must be extensible
 	\end{description}
 \end{frame}
 \begin{frame}[t]{Requirements}{Non-functional requirements}
 	\begin{description}[<+(1)->]
-		\item[performance] Either a decrease in the execution time for \emph{Jayvee} models, or an extension of the \emph{Jayvee} interpreter's capabilities.
-		\item[code style] The source code adheres to the project's code style.
-		\item[maturity] We aim to create a prototype, not a mature implementation.
+		\item[performance] Either a decrease in the execution time for \emph{Jayvee} models, or an extension of the \emph{Jayvee} interpreter's capabilities
+		\item[code style] The source code adheres to the project's code style
+		\item[maturity] We aim to create a prototype, not a mature implementation
 	\end{description}
 \end{frame}
 

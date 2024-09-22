@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	contentStyleType="text/css" height="341px" preserveAspectRatio="none"
+	style="width:761px;height:341px;background:#FFFFFF;" version="1.1" viewBox="0 0 761 341"
+	width="761px" zoomAndPan="magnify">
+	<defs />
+	<g><!--class
+		RustSQLiteLoaderExecutor-->
+		<g id="elem_RustSQLiteLoaderExecutor">
+			<rect codeLine="2" fill="#F1F1F1" height="32" id="RustSQLiteLoaderExecutor"
+				rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;"
+				width="219.4072" x="7" y="302" />
+			<ellipse cx="22" cy="318" fill="#ADD1B2" rx="11" ry="11"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<path
+				d="M24.9688,323.6406 Q24.3906,323.9375 23.75,324.0781 Q23.1094,324.2344 22.4063,324.2344 Q19.9063,324.2344 18.5781,322.5938 Q17.2656,320.9375 17.2656,317.8125 Q17.2656,314.6875 18.5781,313.0313 Q19.9063,311.375 22.4063,311.375 Q23.1094,311.375 23.75,311.5313 Q24.4063,311.6875 24.9688,311.9844 L24.9688,314.7031 Q24.3438,314.125 23.75,313.8594 Q23.1563,313.5781 22.5313,313.5781 Q21.1875,313.5781 20.5,314.6563 Q19.8125,315.7188 19.8125,317.8125 Q19.8125,319.9063 20.5,320.9844 Q21.1875,322.0469 22.5313,322.0469 Q23.1563,322.0469 23.75,321.7813 Q24.3438,321.5 24.9688,320.9219 L24.9688,323.6406 Z "
+				fill="#000000" />
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" textLength="187.4072" x="36" y="322.8467">
+				RustSQLiteLoaderExecutor</text>
+		</g><!--class
+		PolarsSQLiteLoaderExecutor-->
+		<g id="elem_PolarsSQLiteLoaderExecutor">
+			<rect codeLine="6" fill="#F1F1F1" height="32"
+				id="PolarsSQLiteLoaderExecutor" rx="2.5" ry="2.5"
+				style="stroke:#181818;stroke-width:0.5;" width="230.5498" x="261"
+				y="302" />
+			<ellipse cx="276" cy="318" fill="#ADD1B2" rx="11" ry="11"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<path
+				d="M278.9688,323.6406 Q278.3906,323.9375 277.75,324.0781 Q277.1094,324.2344 276.4063,324.2344 Q273.9063,324.2344 272.5781,322.5938 Q271.2656,320.9375 271.2656,317.8125 Q271.2656,314.6875 272.5781,313.0313 Q273.9063,311.375 276.4063,311.375 Q277.1094,311.375 277.75,311.5313 Q278.4063,311.6875 278.9688,311.9844 L278.9688,314.7031 Q278.3438,314.125 277.75,313.8594 Q277.1563,313.5781 276.5313,313.5781 Q275.1875,313.5781 274.5,314.6563 Q273.8125,315.7188 273.8125,317.8125 Q273.8125,319.9063 274.5,320.9844 Q275.1875,322.0469 276.5313,322.0469 Q277.1563,322.0469 277.75,321.7813 Q278.3438,321.5 278.9688,320.9219 L278.9688,323.6406 Z "
+				fill="#000000" />
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" textLength="198.5498" x="290" y="322.8467">
+				PolarsSQLiteLoaderExecutor</text>
+		</g><!--class
+		TsSQLiteLoaderExecutor-->
+		<g id="elem_TsSQLiteLoaderExecutor">
+			<rect codeLine="9" fill="#F1F1F1" height="32" id="TsSQLiteLoaderExecutor"
+				rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;"
+				width="203.8691" x="527.5" y="302" />
+			<ellipse cx="542.5" cy="318" fill="#ADD1B2" rx="11" ry="11"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<path
+				d="M545.4688,323.6406 Q544.8906,323.9375 544.25,324.0781 Q543.6094,324.2344 542.9063,324.2344 Q540.4063,324.2344 539.0781,322.5938 Q537.7656,320.9375 537.7656,317.8125 Q537.7656,314.6875 539.0781,313.0313 Q540.4063,311.375 542.9063,311.375 Q543.6094,311.375 544.25,311.5313 Q544.9063,311.6875 545.4688,311.9844 L545.4688,314.7031 Q544.8438,314.125 544.25,313.8594 Q543.6563,313.5781 543.0313,313.5781 Q541.6875,313.5781 541,314.6563 Q540.3125,315.7188 540.3125,317.8125 Q540.3125,319.9063 541,320.9844 Q541.6875,322.0469 543.0313,322.0469 Q543.6563,322.0469 544.25,321.7813 Q544.8438,321.5 545.4688,320.9219 L545.4688,323.6406 Z "
+				fill="#000000" />
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				lengthAdjust="spacing" textLength="171.8691" x="556.5" y="322.8467">
+				TsSQLiteLoaderExecutor</text>
+		</g><!--class
+		SQLiteLoaderExecutor-->
+		<g id="elem_SQLiteLoaderExecutor">
+			<rect codeLine="12" fill="#F1F1F1" height="32" id="SQLiteLoaderExecutor"
+				rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;"
+				width="288.0469" x="232.5" y="193" />
+			<ellipse cx="247.5" cy="209" fill="#A9DCDF" rx="11" ry="11"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<path
+				d="M247.6094,204.3438 L246.4531,209.4219 L248.7813,209.4219 L247.6094,204.3438 Z M246.125,202.1094 L249.1094,202.1094 L252.4688,214.5 L250.0156,214.5 L249.25,211.4375 L245.9688,211.4375 L245.2188,214.5 L242.7813,214.5 L246.125,202.1094 Z "
+				fill="#000000" />
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				font-style="italic" lengthAdjust="spacing" textLength="156.0234"
+				x="261.5" y="213.8467">SQLiteLoaderExecutor</text>
+			<rect fill="#FFFFFF" height="15.9688"
+				style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;"
+				width="98.0234" x="425.5234" y="190" />
+			<text fill="#000000" font-family="sans-serif" font-size="12"
+				font-style="italic" lengthAdjust="spacing" textLength="96.0234"
+				x="426.5234" y="202.1387">T extends Table</text>
+		</g><!--class
+		AbstractBlockExecutor-->
+		<g id="elem_AbstractBlockExecutor">
+			<rect codeLine="19" fill="#F1F1F1" height="32" id="AbstractBlockExecutor"
+				rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;"
+				width="190.7578" x="281" y="100" />
+			<ellipse cx="296" cy="116" fill="#A9DCDF" rx="11" ry="11"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<path
+				d="M296.1094,111.3438 L294.9531,116.4219 L297.2813,116.4219 L296.1094,111.3438 Z M294.625,109.1094 L297.6094,109.1094 L300.9688,121.5 L298.5156,121.5 L297.75,118.4375 L294.4688,118.4375 L293.7188,121.5 L291.2813,121.5 L294.625,109.1094 Z "
+				fill="#000000" />
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				font-style="italic" lengthAdjust="spacing" textLength="158.7578"
+				x="310" y="120.8467">AbstractBlockExecutor</text>
+		</g><!--class
+		BlockExecutor-->
+		<g id="elem_BlockExecutor">
+			<rect fill="#F1F1F1" height="32" id="BlockExecutor" rx="2.5" ry="2.5"
+				style="stroke:#181818;stroke-width:0.5;" width="131.9893" x="310.5"
+				y="7" />
+			<ellipse cx="325.5" cy="23" fill="#B4A7E5" rx="11" ry="11"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<path
+				d="M321.4219,18.7656 L321.4219,16.6094 L328.8125,16.6094 L328.8125,18.7656 L326.3438,18.7656 L326.3438,26.8438 L328.8125,26.8438 L328.8125,29 L321.4219,29 L321.4219,26.8438 L323.8906,26.8438 L323.8906,18.7656 L321.4219,18.7656 Z "
+				fill="#000000" />
+			<text fill="#000000" font-family="sans-serif" font-size="14"
+				font-style="italic" lengthAdjust="spacing" textLength="99.9893"
+				x="339.5" y="27.8467">BlockExecutor</text>
+		</g><!--reverse
+		link AbstractBlockExecutor to SQLiteLoaderExecutor-->
+		<g id="link_AbstractBlockExecutor_SQLiteLoaderExecutor">
+			<path d="M376.5,150.03 C376.5,166.89 376.5,176.08 376.5,192.95 " fill="none"
+				id="AbstractBlockExecutor-backto-SQLiteLoaderExecutor"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<polygon fill="none"
+				points="376.5,132.03,370.5,150.03,382.5,150.03,376.5,132.03"
+				style="stroke:#181818;stroke-width:1.0;" />
+		</g><!--reverse
+		link SQLiteLoaderExecutor to RustSQLiteLoaderExecutor-->
+		<g id="link_SQLiteLoaderExecutor_RustSQLiteLoaderExecutor">
+			<path codeLine="16"
+				d="M248.8651,229.1483 C220.4551,235.8083 208.19,241.26 182.5,255 C160.6,266.71 140.59,287.58 128.48,301.85 "
+				fill="none"
+				id="SQLiteLoaderExecutor-backto-RustSQLiteLoaderExecutor"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<polygon fill="none"
+				points="266.39,225.04,247.4957,223.3066,250.2345,234.9899,266.39,225.04"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<text fill="#000000" font-family="sans-serif" font-size="13"
+				lengthAdjust="spacing" textLength="184.2344" x="183.5" y="268.0669">
+				SQLiteLoader&lt;PolarsTable&gt;</text>
+		</g><!--reverse
+		link SQLiteLoaderExecutor to PolarsSQLiteLoaderExecutor-->
+		<g id="link_SQLiteLoaderExecutor_PolarsSQLiteLoaderExecutor">
+			<path codeLine="17"
+				d="M376.5,243.33 C376.5,263.67 376.5,281.37 376.5,301.7 "
+				fill="none"
+				id="SQLiteLoaderExecutor-backto-PolarsSQLiteLoaderExecutor"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<polygon fill="none"
+				points="376.5,225.33,370.5,243.33,382.5,243.33,376.5,225.33"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<text fill="#000000" font-family="sans-serif" font-size="13"
+				lengthAdjust="spacing" textLength="184.2344" x="377.5" y="268.0669">
+				SQLiteLoader&lt;PolarsTable&gt;</text>
+		</g><!--reverse
+		link SQLiteLoaderExecutor to TsSQLiteLoaderExecutor-->
+		<g id="link_SQLiteLoaderExecutor_TsSQLiteLoaderExecutor">
+			<path codeLine="18"
+				d="M508.6851,229.3147 C535.8451,235.9547 546.41,241.24 570.5,255 C590.88,266.65 608.58,287.53 619.14,301.82 "
+				fill="none" id="SQLiteLoaderExecutor-backto-TsSQLiteLoaderExecutor"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<polygon fill="none"
+				points="491.2,225.04,507.2602,235.143,510.1099,223.4863,491.2,225.04"
+				style="stroke:#181818;stroke-width:1.0;" />
+			<text fill="#000000" font-family="sans-serif" font-size="13"
+				lengthAdjust="spacing" textLength="159.4595" x="594.5" y="268.0669">
+				SQLiteLoader&lt;TsTable&gt;</text>
+		</g><!--reverse
+		link BlockExecutor to AbstractBlockExecutor-->
+		<g id="link_BlockExecutor_AbstractBlockExecutor">
+			<path d="M376.5,57.03 C376.5,73.89 376.5,83.08 376.5,99.95 " fill="none"
+				id="BlockExecutor-backto-AbstractBlockExecutor"
+				style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;" />
+			<polygon fill="none"
+				points="376.5,39.03,370.5,57.03,382.5,57.03,376.5,39.03"
+				style="stroke:#181818;stroke-width:1.0;" />
+		</g><!--SRC=[lP9DJiCm48NNvHGZTH5Gsmj4bYL0B2fLBHGlkt6I0ImSEx8dKglGk-Caz3-5gWkMCvhtUVpUVAWC8SSyGUTlUhrKI-zXNdfwVPaemecL6Rgd9QObMGTL61b0vKcIIjV0c4EPMQDNd0Ej2emXEjP6GT87R0XDwvPaeiFaizNIUL4NGtXJTSkJK-Pz2Ct4LEPxhSpPGhJ2n5gDqWmXjOPmIJ6q-obh7jlENGnpzAKcDhK6UTXWlVrR-
+		-orlpjLHmTqSJLPT59b4WoGAK6Bxu8p4TmbD5bulJQ8Rylx7_63jkddmIwPRKlSX25sRlvjPX-gpLxhhcJ5_-JPwJJx6etEtczyO23Rkq3-A-_ypLnB59VGn8vqT0VToQgyq9YZ8G-daG_sGzlbhqnH1iV7Cn7ESBm1oDfyDbxmYqBf5C_ueWdg6m00]-->
+	</g>
+</svg>

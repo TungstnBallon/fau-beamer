@@ -1,19 +1,21 @@
 \section{Background information} % FIXME: improve name
 \begin{frame}[t]{Explanations}{Jayvee}
-	\emph{Jayvee} is a language aiming to allow everyone to describe data pipelines \footcite{jvalue:jayvee}.
-	\begin{figure}[h]
-		\begin{center}
-			\includesvg[width=0.5\linewidth]{assets/etl.svg}
-		\end{center}
-		\caption{The basic structure of a pipeline \footcite{jvalue:jayvee:docs:core_concepts}}
-	\end{figure}
-	\pause
-	Examples:
-	\begin{description}
-		\item[Extractor] \Verb|HttpExtractor|, \Verb|LocalFileExtractor|
-		\item[Transformer] \Verb|CSVInterpreter|, \Verb|TableTransformer|
-		\item[Loader] \Verb|CSVFileLoader|, \Verb|SQLiteLoader|
-	\end{description}
+	\begin{itemize}
+		\item \emph{Jayvee}: Language aiming to allow everyone to describe data pipelines \footcite{jvalue:jayvee}.
+		      \begin{figure}[h]
+			      \begin{center}
+				      \includesvg[width=0.5\linewidth]{assets/etl.svg}
+			      \end{center}
+			      \caption{The basic structure of a pipeline \footcite{jvalue:jayvee:docs:core_concepts}}
+		      \end{figure}
+		\item<2-> Examples:
+		      \begin{description}
+			      \item[Extractor] \Verb|HttpExtractor|, \Verb|LocalFileExtractor|
+			      \item[Transformer] \Verb|CSVInterpreter|, \Verb|TableTransformer|
+			      \item[Loader] \Verb|CSVFileLoader|, \Verb|SQLiteLoader|
+		      \end{description}
+		\item<3-> \emph{Jayvee} interpreter: Program that can parse \emph{Jayvee} source files and execute the defined pipelines
+	\end{itemize}
 \end{frame}
 
 
@@ -21,7 +23,8 @@
 	\begin{columns}[t]
 		\begin{column}[t]{0.4\linewidth}
 			\begin{itemize}
-				\item Values are saved column after column\footnotemark.
+				\item Approach to represent tables in linear memory
+				\item Values are saved column after column\footnotemark
 				\item<2-> Advantages over row-oriented storage:
 				      \begin{itemize}
 					      \item Column specific compression\footnotemark
@@ -65,7 +68,7 @@
 		\begin{column}{0.4\linewidth}
 			Apache Arrow specifies:
 			\begin{itemize}
-				\item A memory format\footnotemark \text{ }that is:
+				\item A format\footnotemark \text{ }that is:
 				      \begin{itemize}
 					      \item Columnar
 					      \item In-memory
@@ -113,8 +116,7 @@
 				\begin{figure}
 					\centering
 					\includegraphics[width=0.9\linewidth]{assets/arrow_interop.png}
-					\caption{Illustration demonstrating Arrow enhances interoperability between
-						processes} % FIXME caption
+					\caption{How \emph {Arrow} enhances interoperability between modules}
 				\end{figure}
 			}
 		\end{column}
@@ -123,14 +125,6 @@
 	\footnotetext[1]{\textcite{arrow:spec}}
 	\footnotetext[2]{\textcite{arrow:spec:ipc}}
 	\footnotetext[3]{\textcite{Dremio}}
-\end{frame}
-\begin{frame}[t]{Explanations}{Polars}
-	\begin{itemize}
-		\item \emph{Polars} is built on top of \emph{Apache Arrow}\footnotemark[1]
-		\item Provides additional abstractions, such as \Verb|DataFrame| and \Verb|Series|\footnotemark[1]
-		\item Promises "up to 50x performance"\footnotemark[1]
-	\end{itemize}
-	\footnotetext[1]{\textcite{polars}}
 \end{frame}
 
 

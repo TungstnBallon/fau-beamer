@@ -1,26 +1,22 @@
 \section{Architecture}
 \begin{frame}[t,fragile]{Architecture}{Interpreter overview}
-	\begin{itemize}
-		\item The \emph{Jayvee} interpreter is a program that can parse \emph{Jayvee} source files and execute the defined pipelines
-		      \pause
-		\item Interpreter steps:
-		      \begin{enumerate}
-			      \item Reading and parsing the source file (out of scope). \\
-			            This results in a list of pipeline definitions.
-			            \pause
-			      \item The following algorithm:
-			            \begin{minted}{python}
-	for pipeline in pipelineDefinitions:
-		prevOutput = null;
-		for block in pipeline.blockDefinitions:
-			executor = find_executor(block);
-			prevOutput = executor.execute(prevOutput);
-					\end{minted}
-		      \end{enumerate}
-	\end{itemize}
+	\begin{columns}[T]
+		\begin{column}{0.5\linewidth}
+			\begin{enumerate}
+				\item Parse the source file (out of scope). \\
+				      Results in a list of pipeline definitions.
+				\item<2-> Execute the pipeline definitions
+			\end{enumerate}
+		\end{column}
+		\hfill
+		\begin{column}{0.5\linewidth}
+			\centering
+			\includesvg[height=0.7\textheight]{assets/main_dia.ad.svg}
+		\end{column}
+	\end{columns}
 \end{frame}
-\begin{frame}[t]{Architecture}{Interpreter overview (cont.)}
-	\begin{columns}[t]
+\begin{frame}[t]{Architecture}{Interpreter overview (cont.)} % TODO: reexamine this title
+	\begin{columns}[T]
 		\begin{column}{0.4\linewidth}
 			\begin{itemize}
 				\item<1-> All block executors implement \Verb|BlockExecutor|
@@ -64,7 +60,8 @@
 		      \end{itemize}
 		\item<3-> \emph{Polars}\footnotemark[3]:
 		      \begin{itemize}
-			      \item Offers useful abstractions (\Verb|DataFrame|)
+			      \item Built on top of \emph{Apache Arrow}
+			      \item Provides additional abstractions, such as \Verb|DataFrame| and \Verb|Series|
 			      \item Written in \emph{Rust}
 			      \item Has a \emph{TypeScript} API
 		      \end{itemize}
@@ -126,34 +123,7 @@
 		\end{column}
 	\end{columns}
 \end{frame}
-\begin{frame}[t,fragile]{Architecture}{\emph{Polars} expressions}
-	\begin{block}{\emph{Polars expression}}
-		Describes a series of operations, that result in one or more columns, with automatic optimization and parallelization\footnotemark[1].
-		They can be chained.
-	\end{block}
-	\pause
-	\scriptsize
-	\begin{figure}
-		\begin{minted}[style=default]{typescript}
-use { pl } from 'nodejs-polars';
-// Creation of the DataFrame was omitted
-const dataFrame = ...;
-// When the expression is applied to a DataFrame, `pl.col(...)` selects a column, based on the name
-const first = pl.col("a")
-const second = pl.col("b")
-// When the expression is applied, `mul` multplies all values from expression `first` with those from `second`
-const product = first.mul(second)
-// When the expression is applied, `alias("c")` renames the column to "c".
-const renamed = product.alias("c");
-// withColumn applies the expression and returns a DataFrame, containing the column computed by the expression.
-const newDataFrame = dataFrame.withColumn(renamed)
-// `newDataFrame` contains a column "c". "c" contains the values of column "a" multplied with the values from column "b"
-	\end{minted}
-		\caption{How to multiply the columns "a" and "b"}
-	\end{figure}
-	\footnotetext[1]{\textcite{polars:docs:expr}}
-\end{frame}
-\begin{frame}[t]{Architecture}{What now?} % FIXME What now?
+\begin{frame}[t]{Architecture}{The new implementation affects other classes}
 	\begin{columns}[T]
 		\begin{column}{0.5\linewidth}
 			\begin{itemize}
@@ -184,7 +154,7 @@ const newDataFrame = dataFrame.withColumn(renamed)
 		\end{column}
 	\end{columns}
 \end{frame}
-\begin{frame}[t]{Architecture}{\Verb|FileToTableInterpreter| and \Verb|LocalFileToTableExtractor|}
+\begin{frame}<presentation:0>[t,noframenumbering]{Architecture}{\Verb|FileToTableInterpreter| and \Verb|LocalFileToTableExtractor|}
 	\begin{columns}[T]
 		\begin{column}{0.5\linewidth}
 			\begin{itemize}
@@ -226,42 +196,25 @@ const newDataFrame = dataFrame.withColumn(renamed)
 	\end{columns}
 \end{frame}
 \begin{frame}[t]{Architecture}{\Verb|sqlite-loader-lib|}
-	\begin{itemize}[<+(1)->]
-		\item \emph{Polars} has no built-in database functionality
-		\item \Verb|PolarsSQLiteLoaderExecutor| uses \Verb|PolarsTable| methods to generate SQL statements
-		\item \emph{Polars} can export a \Verb|DataFrame| to the \emph{Arrow} IPC format
-		\item The new external library \Verb|sqlite-loader-lib| is created to read this format and handle database export
-		\item \emph{Polars} is written in \emph{Rust} and uses \emph{NAPI-RS} to offer a \emph{TypeScript} API\footnotemark[1]
-		\item This is the same technology that \emph{Polars} uses\footnotemark[2]
-		      \begin{figure}
-			      \includesvg[height=0.5\FrameHeight]{assets/components.compd.svg}
-		      \end{figure}
-	\end{itemize}
-	\footnotetext[1]{\textcite{napi}}
-	\footnotetext[2]{\textcite{polars:src:napi}}
-\end{frame}
-\begin{frame}[t,fragile]{Architecture}{TableTransformer}
-	\begin{itemize}
-		\item \emph{Jayvee} used to transform tables row-by-row:
-		      \begin{onlyenv}<2>
-			      \begin{minted}[style=default]{python}
-newColumn = ...  # An empty column
-expression = transform.expression
-for row in inputColumns:
-	...  # add row to evaluation context
-	let value = evaluateExpression(expression, context)
-	newColumn.add(newColumn)
-	...  # remove row from evaluation context
-return newColumn
-				\end{minted}
-		      \end{onlyenv}
-		\item<3-> This is still possible, but \emph{Polars} offers its own way of transforming a \Verb|DataFrame|
-		      \only<3>{
-			      \begin{block}{\emph{Polars expression}}
-				      Describes a series of operations, that result in one or more columns, with automatic optimization and parallelization\footnotemark[1].
-			      \end{block}
-		      }
-		\item<4-> The new approach is to convert the transform's \emph{Jayvee} expression into a \emph{Polars} expression
-	\end{itemize}
-	\footnotetext[1]{\textcite{polars:docs:expr}}
+	\begin{columns}[T]
+		\begin{column}{0.5\linewidth}
+			\begin{itemize}[<+(1)->]
+				\item \emph{Polars} has no built-in database functionality
+				\item \Verb|PolarsSQLiteLoaderExecutor| uses \Verb|PolarsTable| methods to generate SQL statements
+				\item \emph{Polars} can export a \Verb|DataFrame| to the \emph{Arrow} IPC format
+				\item The new external library \Verb|sqlite-loader-lib| is created to read this format and handle database export
+				\item \emph{Polars} uses the \emph{Arrow} library for \emph{Rust}
+				\item \Verb|sqlite-loader-lib| follows this to remain consistent
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.5\linewidth}
+			\begin{figure}
+				\alt<6->{
+					\includesvg{assets/components.compd.svg}
+				}{
+					\includesvg[width=\linewidth]{assets/rust_sqlite_loader_executor.cd.svg}
+				}
+			\end{figure}
+		\end{column}
+	\end{columns}
 \end{frame}
