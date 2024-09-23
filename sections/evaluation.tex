@@ -22,59 +22,73 @@
 	\footnotetext[2]{\textcite{dataset}}
 \end{frame}
 \begin{frame}[t]{Evaluation}{Configurations}
-	These characteristics define a configuration:\\
-	\begin{tabular}{|l|l|}
-		\hline
-		characteristic   & possible values                                \\
-		\hline
-		backend          & TS, PL, PLOB, PLRS, PLOBRS                     \\
-		transform amount & none (0), some (4), many (8)                   \\
-		input rows       & 56250, 112500, 225000, 450000, 900000, 1800000 \\
-		\hline
-	\end{tabular}
-	\only<2> {
-		\begin{figure}
-			\begin{subfigure}{0.2\linewidth}
-				\centering
-				\includesvg{assets/ts_cfg.ad.svg}
-				\caption{TS, PL, PLRS}
-			\end{subfigure}
-			\begin{subfigure}{0.2\linewidth}
-				\centering
-				\includesvg{assets/plob_cfg.ad.svg}
-				\caption{PLOB, PLOBRS}
-			\end{subfigure}
-			\caption{How configurations load the table}
-		\end{figure}
-	}
-	\only<3>{
-		\begin{figure}
-			\begin{subfigure}{0.3\linewidth}
-				\centering
-				\includesvg{assets/no_cfg.ad.svg}
-				\caption{none}
-			\end{subfigure}
-			% \hfill
-			\begin{subfigure}{0.3\linewidth}
-				\centering
-				\includesvg[height=0.55\FrameHeight]{assets/so_cfg.ad.svg}
-				\caption{some}
-			\end{subfigure}
-			% \hfill
-			\begin{subfigure}{0.3\linewidth}
-				\centering
-				\includesvg[height=0.55\FrameHeight]{assets/ma_cfg.ad.svg}
-				\caption{many}
-			\end{subfigure}
-			\caption{How configurations transform the table}
-		\end{figure}
-	}
+	\begin{columns}[T]
+		\begin{column}{0.5\linewidth}
+			These characteristics define a configuration:\\
+			\begin{tabular}{|l|l|}
+				\hline
+				characteristic   & possible values                       \\
+				\hline
+				\hline
+				backend          & TS (\emph{TypeScript} implementation) \\
+				                 & PL (\emph{Polars} tables)             \\
+				                 & PLOB (PL + faster table parsing)      \\
+				                 & PLRS (PL + faster SQL export)         \\
+				                 & PLOBRS (PLOB + PLRS)                  \\
+				\hline
+				transform amount & none (0), some (4), many (8)          \\
+				\hline
+				input rows       & 56250, 112500, 225000,                \\
+				                 & 450000, 900000, 1800000               \\
+				\hline
+			\end{tabular}
+		\end{column}
+		\begin{column}{0.5\linewidth}
+			\only<2> {
+				\begin{figure}
+					\begin{subfigure}{0.45\linewidth}
+						\centering
+						\includesvg[width=0.6\linewidth]{assets/ts_cfg.ad.svg}
+						\caption{TS, PL, PLRS}
+					\end{subfigure}
+					\begin{subfigure}{0.45\linewidth}
+						\centering
+						\includesvg[width=0.6\linewidth]{assets/plob_cfg.ad.svg}
+						\caption{PLOB, PLOBRS}
+					\end{subfigure}
+					\caption{How configurations load the table}
+				\end{figure}
+			}
+			\only<3>{
+				\begin{figure}
+					\begin{subfigure}{0.3\linewidth}
+						\centering
+						\includesvg{assets/no_cfg.ad.svg}
+						\caption{none}
+					\end{subfigure}
+					% \hfill
+					\begin{subfigure}{0.3\linewidth}
+						\centering
+						\includesvg[height=0.55\FrameHeight]{assets/so_cfg.ad.svg}
+						\caption{some}
+					\end{subfigure}
+					% \hfill
+					\begin{subfigure}{0.3\linewidth}
+						\centering
+						\includesvg[height=0.55\FrameHeight]{assets/ma_cfg.ad.svg}
+						\caption{many}
+					\end{subfigure}
+					\caption{How configurations transform the table}
+				\end{figure}
+			}
+		\end{column}
+	\end{columns}
 \end{frame}
 
-\begin{frame}
+\begin{frame}<presentation:0>[noframenumbering]
 	\centering
 	\large
-	DEMO TIME!! % FIXME REWORD
+	DEMO TIME!!
 \end{frame}
 
 \begin{frame}[t]{Evaluation}{Maximum input size}
@@ -318,10 +332,10 @@
 			\begin{itemize}
 				\item The three curves are monotonously rising \\
 				      \textrightarrow
-				      \text{} As the number of rows increases, the PLOBRS backend's processing speed compared to TS increases
+				      \text{} More rows lead to PLOBRS becoming faster compared to TS
 				\item The curve representing a pipeline with many transforms, lies above the curve representing some transforms, which itself lies above the curve representing no transforms \\
 				      \textrightarrow
-				      \text{} The greater the number of transforms in a pipeline, the faster the PLOBRS backend is in comparison to the TS baseline
+				      \text{} More transforms lead to PLOBRS becoming faster compared to TS
 			\end{itemize}
 		\end{column}
 		\begin{column}{0.5\linewidth}
@@ -388,7 +402,7 @@
 	\begin{description}
 		\item[columnar] A columnar format has advantages described previously, including faster read times and less memory usage \uncover<2->{({\color{green} \checkmark})}
 		\item[interoperability] This allows the data to be used by multiple different applications without complex conversion \uncover<3->{({\color{green} \checkmark})}
-		\item[feature toggle] We must be able to (de)activate the new features at runtime \uncover<4->{({\color{green} \checkmark})}
+		\item[feature toggle] (De)activate the new features at runtime \uncover<4->{({\color{green} \checkmark})}
 		\item[compatibility] The \Verb|.sqlite| files produced by the different implementations must be identical \uncover<5->{({\color{red} \xmark})}
 		\item[modularization] Should it be necessary to write code in a language other than \emph{TypeScript}, this code must be placed in an external library usable from \emph{TypeScript} \uncover<6->{({\color{green} \checkmark})}
 		\item[extensibility] The functionality of the chosen data representation must be extensible \uncover<7->{({\color{green} \checkmark})}
@@ -399,7 +413,7 @@
 	\begin{description}
 		\item[performance] Either a decrease in the execution time for \emph{Jayvee} models, or an extension of the \emph{Jayvee} interpreter's capabilities \uncover<2->{({\color{green} \checkmark})}
 		\item[code style] The source code adheres to the project's code style \uncover<3->{({\color{green} \checkmark})}
-		\item[maturity] We aim to create a prototype, not a mature implementation \uncover<4->{({\color{green} \checkmark})}
+		\item[maturity] Create a prototype, not a mature implementation \uncover<4->{({\color{green} \checkmark})}
 	\end{description}
 \end{frame}
 
